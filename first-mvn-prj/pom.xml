@@ -18,6 +18,7 @@
     <spring.version>5.3.25</spring.version>
   </properties>
 
+  <!-- Основные зависимости нужно выносить в отдельный блок <dependencies> -->
   <dependencyManagement>
     <dependencies>
       <!-- BOM для JUnit -->
@@ -77,6 +78,7 @@
     </dependency>
   </dependencies>
 
+<!-- Создание профилей -->
   <profiles>
     <profile>
       <id>test</id>
