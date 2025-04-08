@@ -1,0 +1,14 @@
+{
+  "name": "lalalala",
+  "version": "aaaaaa",
+  "description": "1613",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aspect-your-love/java-enterprise-edition-JavaGuru.git"
+  },
+  "private": true
+}
