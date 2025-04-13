@@ -1,3 +1,9 @@
+-- Таблица со списком компаний
+CREATE TABLE company(
+    id SERIAL PRIMARY KEY ,
+    name TEXT NOT NULL
+);
+
 CREATE TABLE employee(
     id SERIAL,
     first_name VARCHAR(128) NOT NULL,
@@ -6,5 +12,5 @@ CREATE TABLE employee(
     salary int NOT NULL,
 
 --  создание составного первичного ключа
-    PRIMARY KEY (id, firest_name)
+    PRIMARY KEY (id, first_name)
 );
