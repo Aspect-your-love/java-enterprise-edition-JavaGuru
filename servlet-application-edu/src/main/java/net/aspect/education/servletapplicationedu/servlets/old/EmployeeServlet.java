@@ -1,11 +1,11 @@
-package net.aspect.education.servletapplicationedu;
+package net.aspect.education.servletapplicationedu.servlets.old;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import net.aspect.education.servletapplicationedu.db.EmployeeDAO;
+import net.aspect.education.servletapplicationedu.dao.EmployeeDao;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -17,7 +17,7 @@ public class EmployeeServlet extends HttpServlet {
         resp.setContentType("text/html");
         resp.setCharacterEncoding(StandardCharsets.UTF_8.name());
 
-        EmployeeDAO employeeDAO = new EmployeeDAO();
+        EmployeeDao employeeDAO = new EmployeeDao();
 
         req.setAttribute("employees", employeeDAO.getEmployees());
 

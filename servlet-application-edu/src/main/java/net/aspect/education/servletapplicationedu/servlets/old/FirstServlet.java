@@ -1,4 +1,4 @@
-package net.aspect.education.servletapplicationedu;
+package net.aspect.education.servletapplicationedu.servlets.old;
 
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
