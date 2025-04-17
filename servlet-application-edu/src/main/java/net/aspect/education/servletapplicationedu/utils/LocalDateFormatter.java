@@ -6,6 +6,7 @@ import java.time.format.DateTimeParseException;
 import java.util.Optional;
 
 public class LocalDateFormatter {
+    private static final LocalDateFormatter ISNTANCE = new LocalDateFormatter();
     private static final String PATTERN = "yyyy-MM-dd";
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern(PATTERN);
 
@@ -21,5 +22,9 @@ public class LocalDateFormatter {
         } catch (DateTimeParseException exception){
             return false;
         }
+    }
+
+    public static LocalDateFormatter getInstance() {
+        return ISNTANCE;
     }
 }
