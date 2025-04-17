@@ -1,11 +1,11 @@
-package net.aspect.education.servletapplicationedu.db;
+package net.aspect.education.servletapplicationedu.dao;
 
 import net.aspect.education.servletapplicationedu.entity.Employee;
 import net.aspect.education.servletapplicationedu.entity.enums.Company;
 
 import java.util.List;
 
-public class EmployeeDAO {
+public class EmployeeDao {
     List<Employee> employees;
 
     {

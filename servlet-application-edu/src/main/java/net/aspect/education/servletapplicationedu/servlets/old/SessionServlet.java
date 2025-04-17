@@ -1,4 +1,4 @@
-package net.aspect.education.servletapplicationedu;
+package net.aspect.education.servletapplicationedu.servlets.old;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -8,7 +8,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
-import java.util.Enumeration;
 
 @WebServlet("/session")
 public class SessionServlet extends HttpServlet {

@@ -6,7 +6,7 @@
 
     <!--<servlet>
         <servlet-name>first</servlet-name>
-        <servlet-class>net.aspect.education.servletapplicationedu.FirstServlet</servlet-class>
+        <servlet-class>net.aspect.education.servletapplicationedu.servlets.old.FirstServlet</servlet-class>
     </servlet>
     
     <servlet-mapping>
