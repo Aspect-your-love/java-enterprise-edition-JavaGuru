@@ -13,6 +13,8 @@
     <title>Title</title>
 </head>
 <body>
+<%@include file="header.jsp"%>
+<h1>Сотрудники</h1>
     <ul>
         <c:forEach var="employees" items="${requestScope.employees}">
             <li>${employees.toString()}</li>

@@ -11,11 +11,12 @@ import net.aspect.education.servletapplicationedu.entity.enums.Role;
 import net.aspect.education.servletapplicationedu.exception.ValidationException;
 import net.aspect.education.servletapplicationedu.service.UserService;
 import net.aspect.education.servletapplicationedu.utils.LocalDateFormatter;
+import net.aspect.education.servletapplicationedu.utils.UrlPath;
 
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/registration")
+@WebServlet(UrlPath.REGISTRATION)
 public class RegistrationServlet extends HttpServlet {
     private final LocalDateFormatter formatter = LocalDateFormatter.getInstance();
     private final UserService userService = UserService.getInstance();

@@ -1,7 +1,10 @@
 package net.aspect.education.servletapplicationedu.dao;
 
 import net.aspect.education.servletapplicationedu.entity.User;
+import net.aspect.education.servletapplicationedu.entity.enums.Gender;
+import net.aspect.education.servletapplicationedu.entity.enums.Role;
 import net.aspect.education.servletapplicationedu.utils.ConnectionManager;
+import net.aspect.education.servletapplicationedu.utils.LocalDateFormatter;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -16,10 +19,50 @@ public class UserDao implements Dao<Long, User>{
     private static final UserDao INSTANSE = new UserDao();
     private static final String SAVE_SQL =
             "INSERT INTO users (name, birthday, email, password, role, gender) VALUES (?, ?, ?, ?, ?, ?);";
+    private static final String GET_BY_EMAIL_AND_PASSWORD_SQL =
+            """
+                    SELECT 
+                      * 
+                    FROM
+                      users
+                    WHERE
+                      email = ?
+                      AND
+                      password = ?;
+                    """;
 
     private UserDao(){
 
     }
+
+    public Optional<User> getByEmailAndPassword(String email, String password){
+        try(Connection connection = ConnectionManager.get()){
+            PreparedStatement preparedStatement = connection.prepareStatement(GET_BY_EMAIL_AND_PASSWORD_SQL, RETURN_GENERATED_KEYS);
+            preparedStatement.setObject(1, email);
+            preparedStatement.setObject(2, password);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+            User retUser = null;
+            if(resultSet.next()){
+                retUser = new User();
+                retUser.setId(resultSet.getInt("id"));
+                retUser.setName(resultSet.getString("name"));
+                retUser.setBirthday(LocalDateFormatter.format(resultSet.getDate("birthday").toString()));
+                retUser.setEmail(resultSet.getString("email"));
+                retUser.setPassword(resultSet.getString("password"));
+                retUser.setRole(Role.valueOf(resultSet.getString("Role")));
+                retUser.setGender(Gender.valueOf(resultSet.getString("gender")));
+            }
+
+            return Optional.ofNullable(retUser);
+
+        } catch(SQLException e){
+            e.printStackTrace();
+            return Optional.empty();
+        }
+
+    }
+
 
     @Override
     public boolean update(User entity) {
