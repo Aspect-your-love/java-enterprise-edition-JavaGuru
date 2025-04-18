@@ -44,8 +44,8 @@ public class UserDao implements Dao<Long, User>{
             preparedStatement.setObject(2, entity.getBirthday());
             preparedStatement.setObject(3, entity.getEmail());
             preparedStatement.setObject(4, entity.getPassword());
-            preparedStatement.setObject(5, entity.getRole());
-            preparedStatement.setObject(6, entity.getGender());
+            preparedStatement.setObject(5, entity.getRole().toString());
+            preparedStatement.setObject(6, entity.getGender().toString());
 
             preparedStatement.executeUpdate();
 

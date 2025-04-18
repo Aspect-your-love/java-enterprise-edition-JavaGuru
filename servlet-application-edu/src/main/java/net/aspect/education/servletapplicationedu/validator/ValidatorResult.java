@@ -7,7 +7,7 @@ public class ValidatorResult {
     private final List<Error> errors = new ArrayList<>();
 
     public boolean isValid() {
-
+        return errors.isEmpty();
     }
 
     public void add(Error error){
