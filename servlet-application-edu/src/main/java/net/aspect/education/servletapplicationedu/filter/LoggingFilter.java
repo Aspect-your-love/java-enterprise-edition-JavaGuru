@@ -6,13 +6,15 @@ import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.Filter;
 import jakarta.servlet.annotation.WebFilter;
+
 import java.io.IOException;
 import java.util.Arrays;
 
 /**
  * Фильтр "логирования". Принимает абсолютно все
  * параметры из запросов и выводит их в
- * консоль*/
+ * консоль
+ */
 @WebFilter("/*")
 public class LoggingFilter implements Filter {
     @Override
@@ -24,7 +26,7 @@ public class LoggingFilter implements Filter {
                 .getParameterMap()
                 .forEach((key, value)
                         -> System.out.println(key + ':'
-                        + Arrays.toString(value)));
+                                              + Arrays.toString(value)));
         chain.doFilter(request, response);
     }
 }
