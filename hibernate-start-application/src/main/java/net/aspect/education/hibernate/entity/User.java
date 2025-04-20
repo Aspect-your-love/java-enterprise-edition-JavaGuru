@@ -2,25 +2,32 @@ package net.aspect.education.hibernate.entity;
 
 //В версии 5 использовали пакет javax
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import net.aspect.education.hibernate.converter.BirthdayConverter;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@EqualsAndHashCode(of={"username", "profile"})
+@ToString(exclude = "company")
 @Entity
 @Table(name="users", schema="public")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
+    @Column(name="username", unique = true, nullable = false)
     private String username;
     @Embedded
     private PersonalInfo personalInfo;
     @Enumerated(EnumType.STRING)
     private Role role;
+
+    @ManyToOne(optional = true, fetch=FetchType.LAZY)
+    @JoinColumn(name="company_id")
+    private Company company;
+
+    @OneToOne(mappedBy="user", cascade = CascadeType.ALL)
+    private Profile profile;
 }

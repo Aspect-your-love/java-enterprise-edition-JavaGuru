@@ -1,10 +1,119 @@
 package net.aspect.education.hibernate;
 
+import jakarta.persistence.Column;
+import lombok.Cleanup;
+import lombok.Data;
+import net.aspect.education.hibernate.entity.*;
+import net.aspect.education.hibernate.util.HibernateUtil;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
 public class HibernateRunnerTest {
 
-    /*@Test
-    public void testHIbernateApi() throws SQLException, IllegalAccessException {
+    @Test
+    public void checkedOneToOne(){
+        @Cleanup SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
+        @Cleanup Session session = sessionFactory.openSession();
+
         User user = User.builder()
+                .username("level-up-1@developer.ru")
+                .build();
+
+        Profile profile = Profile
+                .builder()
+                .language("RU")
+                .street("Borisova, 3")
+                .build();
+
+        session.beginTransaction();
+        //---------------------------------------------//
+        session.persist(user);
+        profile.setUser(user);
+        session.persist(profile);
+
+        //---------------------------------------------//
+        session.getTransaction().commit();
+    }
+
+    @Test
+    @Disabled
+    public void checkOrphalRemoval(){
+        @Cleanup SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
+        @Cleanup Session session = sessionFactory.openSession();
+
+        Company company = Company.builder()
+                .name("Sterlitmah")
+                .build();
+
+        User user = User.builder()
+                .username("level-up@developer.ru")
+                .build();
+
+        session.beginTransaction();
+        //---------------------------------------------//
+
+        Company companyGoogle = session.get(Company.class, 1);
+        companyGoogle.getUsers().forEach(System.out::println);
+        companyGoogle.getUsers().removeIf(u -> u.getId().equals(5L));
+
+        //---------------------------------------------//
+        session.getTransaction().commit();
+    }
+
+    @Test
+    @Disabled
+    public void addNewUserAndCompany(){
+        @Cleanup SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
+        @Cleanup Session session = sessionFactory.openSession();
+
+        Company company = Company.builder()
+                .name("Sterlitmah")
+                .build();
+
+        User user = User.builder()
+                .username("level-up@developer.ru")
+                .build();
+
+        session.beginTransaction();
+        //---------------------------------------------//
+        company.addUser(user);
+        session.merge(company);
+
+        //---------------------------------------------//
+        session.getTransaction().commit();
+    }
+
+    @Test
+    @Disabled
+    public void checkOneToMany(){
+        @Cleanup SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
+        @Cleanup Session session = sessionFactory.openSession();
+
+        session.beginTransaction();
+        //---------------------------------------------//
+
+        Company company = session.get(Company.class, 1);
+        System.out.println(company.getUsers());
+
+        //---------------------------------------------//
+        session.getTransaction().commit();
+    }
+
+    @Test
+    @Disabled
+    public void testHIbernateApi() throws SQLException, IllegalAccessException {
+        /*User user = User.builder()
                 .username("kulagin1@developer.ru")
                 .firstName("Viktor")
                 .lastname("Kulagin")
@@ -55,6 +164,6 @@ public class HibernateRunnerTest {
 
         preparedStatement.executeUpdate();
         preparedStatement.close();
-        connection.close();
-    }*/
+        connection.close();*/
+    }
 }

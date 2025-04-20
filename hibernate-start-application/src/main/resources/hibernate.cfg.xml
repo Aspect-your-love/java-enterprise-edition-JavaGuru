@@ -32,6 +32,8 @@
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
         <mapping class="net.aspect.education.hibernate.entity.User"/>
+        <mapping class="net.aspect.education.hibernate.entity.Company"/>
+        <mapping class="net.aspect.education.hibernate.entity.Profile"/>
 
     </session-factory>
 </hibernate-configuration>
