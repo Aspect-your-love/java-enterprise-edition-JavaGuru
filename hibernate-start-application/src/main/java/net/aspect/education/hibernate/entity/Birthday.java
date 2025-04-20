@@ -1,4 +1,4 @@
-package net.aspect.education.hibernate.start.entity;
+package net.aspect.education.hibernate.entity;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;

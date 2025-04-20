@@ -17,6 +17,7 @@
     <hibernate-core>6.6.13.Final</hibernate-core>
     <postgres>42.7.5</postgres>
     <lombok>1.18.38</lombok>
+    <slf4j>2.0.17</slf4j>
   </properties>
 
   <dependencies>
@@ -53,6 +54,11 @@
       <artifactId>lombok</artifactId>
       <version>${lombok}</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>${slf4j}</version>
     </dependency>
   </dependencies>
 

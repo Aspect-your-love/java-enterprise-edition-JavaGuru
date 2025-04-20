@@ -1,0 +1,175 @@
+[17:43:40,113] INFO [net.aspect.education.hibernate.HibernateRunner: 25] User object in transient state: User(username=kulagin@developer.ru, firstName=Viktor, lastname=Kulagin, birthDate=Birthday[birthDate=2001-01-01], role=ADMIN)
+[17:43:40,388] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[17:43:41,101] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[17:43:41,323] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[17:43:41,930] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[17:43:43,752] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[17:57:13,610] INFO [net.aspect.education.hibernate.HibernateRunner: 29] User object in transient state: User(username=kulagin@developer.ru, personalInfo=PersonalInfo(firstname=Viktor, lastname=Kulagin, birthDate=Birthday[birthDate=2001-01-01]), role=ADMIN)
+[17:57:13,804] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[17:57:14,313] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[17:57:14,493] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[17:57:14,945] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[17:57:16,840] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[17:57:16,965] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 145] SQL Error: 0, SQLState: 42703
+[17:57:16,965] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 150] ОШИБКА: столбец "firstname" в таблице "users" не существует
+  Позиция: 38
+[17:57:16,982] ERROR [net.aspect.education.hibernate.HibernateRunner: 39] Exception: 
+org.hibernate.exception.SQLGrammarException: could not execute statement [ОШИБКА: столбец "firstname" в таблице "users" не существует
+  Позиция: 38] [insert into public.users (birth_date,firstname,lastname,role,username) values (?,?,?,?,?)]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:134)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:55)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:104)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:110)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:644)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:511)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:414)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1429)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:491)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2354)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1978)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:37)
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: столбец "firstname" в таблице "users" не существует
+  Позиция: 38
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
+	... 21 more
+[17:58:03,300] INFO [net.aspect.education.hibernate.HibernateRunner: 29] User object in transient state: User(username=kulagin@developer.ru, personalInfo=PersonalInfo(firstname=Viktor, lastname=Kulagin, birthDate=Birthday[birthDate=2001-01-01]), role=ADMIN)
+[17:58:03,553] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[17:58:04,362] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[17:58:04,659] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[17:58:05,344] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[17:58:07,573] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[17:58:07,714] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 145] SQL Error: 0, SQLState: 23505
+[17:58:07,714] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 150] ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_pkey"
+  Подробности: Ключ "(username)=(kulagin@developer.ru)" уже существует.
+[17:58:07,729] ERROR [net.aspect.education.hibernate.HibernateRunner: 39] Exception: 
+org.hibernate.exception.ConstraintViolationException: could not execute statement [ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_pkey"
+  Подробности: Ключ "(username)=(kulagin@developer.ru)" уже существует.] [insert into public.users (birth_date,first_name,lastname,role,username) values (?,?,?,?,?)]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:97)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:134)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:55)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:104)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:110)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:644)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:511)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:414)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1429)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:491)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2354)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1978)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:37)
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_pkey"
+  Подробности: Ключ "(username)=(kulagin@developer.ru)" уже существует.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
+	... 21 more
+[18:00:40,441] INFO [net.aspect.education.hibernate.HibernateRunner: 29] User object in transient state: User(username=kulagin@developer.ru, personalInfo=PersonalInfo(firstname=Viktor, lastname=Kulagin, birthDate=Birthday[birthDate=2001-01-01]), role=ADMIN)
+[18:00:40,678] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[18:00:41,296] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[18:00:41,651] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[18:00:42,309] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[18:00:43,023] INFO [net.aspect.education.hibernate.HibernateRunner: 29] User object in transient state: User(username=kulagin@developer.ru, personalInfo=PersonalInfo(firstname=Viktor, lastname=Kulagin, birthDate=Birthday[birthDate=2001-01-01]), role=ADMIN)
+[18:00:43,226] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[18:00:43,928] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[18:00:44,166] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[18:00:44,887] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[18:00:45,122] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[18:00:47,093] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[18:39:29,991] INFO [net.aspect.education.hibernate.HibernateRunner: 29] User object in transient state: User(id=null, username=kulagin@developer.ru, personalInfo=PersonalInfo(firstname=Viktor, lastname=Kulagin, birthDate=Birthday[birthDate=2001-01-01]), role=ADMIN)
+[18:39:30,396] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[18:39:31,455] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[18:39:31,722] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[18:39:32,527] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[18:39:34,249] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[18:39:45,704] INFO [net.aspect.education.hibernate.HibernateRunner: 29] User object in transient state: User(id=null, username=kulagin@developer.ru, personalInfo=PersonalInfo(firstname=Viktor, lastname=Kulagin, birthDate=Birthday[birthDate=2001-01-01]), role=ADMIN)
+[18:39:45,879] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[18:39:46,358] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[18:39:46,507] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[18:39:46,897] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[18:39:48,129] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)

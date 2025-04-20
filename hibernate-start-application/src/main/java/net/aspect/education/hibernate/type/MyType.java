@@ -1,4 +1,4 @@
-package net.aspect.education.hibernate.start.type;
+package net.aspect.education.hibernate.type;
 
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.usertype.UserType;

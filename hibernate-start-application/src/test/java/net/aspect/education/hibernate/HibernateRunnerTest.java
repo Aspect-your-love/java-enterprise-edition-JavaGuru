@@ -1,22 +1,5 @@
 package net.aspect.education.hibernate;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Table;
-import net.aspect.education.hibernate.start.entity.Birthday;
-import net.aspect.education.hibernate.start.entity.Role;
-import net.aspect.education.hibernate.start.entity.User;
-import org.junit.jupiter.api.Test;
-
-import java.lang.reflect.Field;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.Optional;
-import java.util.stream.Collectors;
-
 public class HibernateRunnerTest {
 
     /*@Test

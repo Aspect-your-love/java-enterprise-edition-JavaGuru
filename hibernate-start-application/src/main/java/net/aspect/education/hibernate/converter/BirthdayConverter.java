@@ -1,9 +1,8 @@
-package net.aspect.education.hibernate.start.converter;
+package net.aspect.education.hibernate.converter;
 
 import jakarta.persistence.AttributeConverter;
-import net.aspect.education.hibernate.start.entity.Birthday;
+import net.aspect.education.hibernate.entity.Birthday;
 
-import javax.swing.text.AbstractDocument;
 import java.sql.Date;
 import java.util.Optional;
 
