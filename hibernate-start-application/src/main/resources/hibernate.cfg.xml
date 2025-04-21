@@ -34,6 +34,8 @@
         <mapping class="net.aspect.education.hibernate.entity.User"/>
         <mapping class="net.aspect.education.hibernate.entity.Company"/>
         <mapping class="net.aspect.education.hibernate.entity.Profile"/>
+        <mapping class="net.aspect.education.hibernate.entity.Chat"/>
+        <mapping class="net.aspect.education.hibernate.entity.UserChat"/>
 
     </session-factory>
 </hibernate-configuration>

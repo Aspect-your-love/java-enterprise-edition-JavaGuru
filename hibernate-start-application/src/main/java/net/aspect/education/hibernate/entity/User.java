@@ -5,11 +5,14 @@ import jakarta.persistence.*;
 import lombok.*;
 import net.aspect.education.hibernate.converter.BirthdayConverter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@EqualsAndHashCode(of={"username", "profile"})
+@EqualsAndHashCode(of={"username", "profile", "userChats"})
 @ToString(exclude = "company")
 @Entity
 @Table(name="users", schema="public")
@@ -30,4 +33,8 @@ public class User {
 
     @OneToOne(mappedBy="user", cascade = CascadeType.ALL)
     private Profile profile;
+
+    @Builder.Default
+    @OneToMany(mappedBy = "users")
+    private List<UserChat> userChats = new ArrayList<>();
 }

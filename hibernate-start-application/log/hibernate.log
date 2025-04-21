@@ -560,3 +560,41 @@ Caused by: org.postgresql.util.PSQLException: ОШИБКА: повторяюще
 	Minimum pool size: 1
 	Maximum pool size: 20
 [23:16:50,716] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[23:51:16,550] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[23:51:16,958] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[23:51:17,102] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[23:51:17,449] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[23:52:10,589] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[23:52:11,173] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[23:52:11,350] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[23:52:11,775] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[23:52:13,384] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[23:52:13,533] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 145] SQL Error: 0, SQLState: 42703
+[23:52:13,534] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 150] ОШИБКА: столбец c1_1.name не существует
+  Позиция: 29
+[23:56:59,077] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[23:56:59,515] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[23:56:59,673] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[23:57:00,146] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[23:57:01,787] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)

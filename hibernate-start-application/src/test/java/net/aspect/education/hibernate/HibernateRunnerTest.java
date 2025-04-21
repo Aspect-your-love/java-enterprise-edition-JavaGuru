@@ -22,6 +22,27 @@ import java.util.stream.Collectors;
 public class HibernateRunnerTest {
 
     @Test
+    @Disabled
+    public void manyToManyTest(){
+
+        @Cleanup SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
+        @Cleanup Session session = sessionFactory.openSession();
+
+        Chat chat = Chat.builder().name("aspect_party").build();
+
+
+        session.beginTransaction();
+        //---------------------------------------------//
+        User user = session.get(User.class, 10L);
+//        user.addChat(chat);
+        session.persist(chat);
+
+        //---------------------------------------------//
+        session.getTransaction().commit();
+    }
+
+    @Test
+    @Disabled
     public void checkedOneToOne(){
         @Cleanup SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
         @Cleanup Session session = sessionFactory.openSession();
