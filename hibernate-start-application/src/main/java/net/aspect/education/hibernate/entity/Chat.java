@@ -16,10 +16,10 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name="chat")
-public class Chat {
-    @Id
+public class Chat extends BaseEntity<Long>{
+    /*@Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+    private Long id;*/
 
     @Column(name="name_chat", unique = true, nullable=false)
     private String name;

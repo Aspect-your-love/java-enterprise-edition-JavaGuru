@@ -22,6 +22,44 @@ import java.util.stream.Collectors;
 public class HibernateRunnerTest {
 
     @Test
+    public void checkInheritance() {
+        @Cleanup SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
+        @Cleanup Session session = sessionFactory.openSession();
+
+        session.beginTransaction();
+        /*----------------------------------------------------------*/
+        Company company = Company.builder().name("Yandex").build();
+        session.save(company);
+
+        Programmer proger = new Programmer();
+        proger.setUsername("e-pam@proger.ger");
+        proger.setCompany(company);
+        proger.setLanguage(Language.JAVA);
+
+        session.persist(proger);
+
+        Manager manager = new Manager();
+        manager.setUsername("manager-epam@proger.ger");
+        manager.setCompany(company);
+        manager.setProject("Java EE app");
+        session.persist(manager);
+
+        session.flush();
+        session.clear();
+
+        Programmer proger2 = session.get(Programmer.class, 1L);
+        Manager manager1 = session.get(Manager.class, 1L);
+
+        System.out.println(proger2);
+        System.out.println(manager1);
+
+
+        /*----------------------------------------------------------*/
+        session.getTransaction().commit();
+    }
+
+    @Test
+    @Disabled
     public void checkH2Connection(){
         @Cleanup SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
         @Cleanup Session session = sessionFactory.openSession();

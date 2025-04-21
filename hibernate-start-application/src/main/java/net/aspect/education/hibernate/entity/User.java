@@ -16,6 +16,7 @@ import java.util.List;
 @ToString(exclude = "company")
 @Entity
 @Table(name="users", schema="public")
+@Inheritance(strategy = InheritanceType.JOINED)
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

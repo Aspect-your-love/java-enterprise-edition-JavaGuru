@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @Entity
 @Table(name="profile")
-public class Profile {
+public class Profile{
 
     @Id
     @Column(name="user_id")

@@ -14,10 +14,10 @@ import java.util.Set;
 @Builder
 @Entity
 @Table(name="company")
-public class Company {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+public class Company extends BaseEntity<Long>{
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private Integer id;
 
     @Column(name="name", unique = true, nullable = false)
     private String name;
