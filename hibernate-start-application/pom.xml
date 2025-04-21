@@ -16,6 +16,7 @@
     <junit-jupiter>5.13.0-M2</junit-jupiter>
     <hibernate-core>6.6.13.Final</hibernate-core>
     <postgres>42.7.5</postgres>
+    <h2-db>2.3.232</h2-db>
     <lombok>1.18.38</lombok>
     <slf4j>2.0.17</slf4j>
   </properties>
@@ -59,6 +60,12 @@
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
       <version>${slf4j}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>${h2-db}</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 

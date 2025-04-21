@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!--Ссылка на подключение к ДБ-->
+        <property name="connection.url">
+            jdbc:h2:mem:hiber
+        </property>
+        <!--Драйвер для подключения к БД-->
+        <property name="connection.driver_class">
+            org.h2.Driver
+        </property>
+        <!--Юзернейм пользовтеля ДБ-->
+        <property name="connection.username">
+        </property>
+        <!--Пароль пользователя ДБ-->
+        <property name="connection.password">
+        </property>
+        <!--Отображение SQL-->
+        <property name="show_sql">
+            true
+        </property>
+        <!--Форматирование вывода SQL-->
+        <property name="format_sql">
+            true
+        </property>
+        <!--Диалект выбирается автоматически-->
+        <!-- DB schema will be updated if needed -->
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <mapping class="net.aspect.education.hibernate.entity.User"/>
+        <mapping class="net.aspect.education.hibernate.entity.Company"/>
+        <mapping class="net.aspect.education.hibernate.entity.Profile"/>
+        <mapping class="net.aspect.education.hibernate.entity.Chat"/>
+        <mapping class="net.aspect.education.hibernate.entity.UserChat"/>
+    </session-factory>
+</hibernate-configuration>

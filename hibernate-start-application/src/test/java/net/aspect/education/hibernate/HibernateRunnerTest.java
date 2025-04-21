@@ -22,6 +22,19 @@ import java.util.stream.Collectors;
 public class HibernateRunnerTest {
 
     @Test
+    public void checkH2Connection(){
+        @Cleanup SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
+        @Cleanup Session session = sessionFactory.openSession();
+
+        session.beginTransaction();
+        /*----------------------------------------------------------*/
+        Company company = Company.builder().name("Google").build();
+        session.save(company);
+        /*----------------------------------------------------------*/
+        session.getTransaction().commit();
+    }
+
+    @Test
     @Disabled
     public void manyToManyTest(){
 

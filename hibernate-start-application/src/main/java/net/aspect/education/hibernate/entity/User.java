@@ -35,6 +35,6 @@ public class User {
     private Profile profile;
 
     @Builder.Default
-    @OneToMany(mappedBy = "users")
+    @OneToMany(mappedBy = "user")
     private List<UserChat> userChats = new ArrayList<>();
 }

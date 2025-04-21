@@ -25,7 +25,7 @@ public class Chat {
     private String name;
 
     @Builder.Default
-    @ManyToMany(mappedBy="chats")
+    @OneToMany(mappedBy="chat")
     private List<UserChat> userChat = new ArrayList<>();
 }
 
