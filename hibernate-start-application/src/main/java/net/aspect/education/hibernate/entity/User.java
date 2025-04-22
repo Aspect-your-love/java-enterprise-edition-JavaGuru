@@ -8,6 +8,13 @@ import net.aspect.education.hibernate.converter.BirthdayConverter;
 import java.util.ArrayList;
 import java.util.List;
 
+@NamedEntityGraph(
+        name="withCompanyAndChat",
+        attributeNodes={
+                @NamedAttributeNode("company"),
+                @NamedAttributeNode(value="userChats", subgraph="chat")
+        }
+)
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -32,10 +39,12 @@ public class User {
     @JoinColumn(name="company_id")
     private Company company;
 
-    @OneToOne(mappedBy="user", cascade = CascadeType.ALL)
-    private Profile profile;
+//    @OneToOne(mappedBy="user", cascade = CascadeType.ALL)
+//    private Profile profile;
 
     @Builder.Default
     @OneToMany(mappedBy = "user")
     private List<UserChat> userChats = new ArrayList<>();
+
+
 }

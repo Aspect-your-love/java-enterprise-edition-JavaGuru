@@ -30,14 +30,12 @@
         </property>
         <!--Диалект выбирается автоматически-->
         <!-- DB schema will be updated if needed -->
-        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
         <mapping class="net.aspect.education.hibernate.entity.User"/>
         <mapping class="net.aspect.education.hibernate.entity.Company"/>
         <mapping class="net.aspect.education.hibernate.entity.Profile"/>
         <mapping class="net.aspect.education.hibernate.entity.Chat"/>
         <mapping class="net.aspect.education.hibernate.entity.UserChat"/>
-        <mapping class="net.aspect.education.hibernate.entity.Programmer"/>
-        <mapping class="net.aspect.education.hibernate.entity.Manager"/>
 
     </session-factory>
 </hibernate-configuration>

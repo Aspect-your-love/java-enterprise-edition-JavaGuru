@@ -22,12 +22,13 @@ import java.util.stream.Collectors;
 public class HibernateRunnerTest {
 
     @Test
+    @Disabled
     public void checkInheritance() {
-        @Cleanup SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
+        /*@Cleanup SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
         @Cleanup Session session = sessionFactory.openSession();
 
         session.beginTransaction();
-        /*----------------------------------------------------------*/
+        *//*----------------------------------------------------------*//*
         Company company = Company.builder().name("Yandex").build();
         session.save(company);
 
@@ -54,8 +55,8 @@ public class HibernateRunnerTest {
         System.out.println(manager1);
 
 
-        /*----------------------------------------------------------*/
-        session.getTransaction().commit();
+        *//*----------------------------------------------------------*//*
+        session.getTransaction().commit();*/
     }
 
     @Test

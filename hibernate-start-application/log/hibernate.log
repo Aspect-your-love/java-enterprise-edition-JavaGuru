@@ -726,3 +726,202 @@ Caused by: org.postgresql.util.PSQLException: ОШИБКА: повторяюще
 [17:26:46,387] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 [17:26:46,446] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@12f9f896] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 [17:26:46,463] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@e162a35] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[21:59:52,197] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[21:59:52,599] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[21:59:52,827] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[21:59:53,215] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[21:59:54,900] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[21:59:54,926] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@69ce14e6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[21:59:54,944] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@165d1d54] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[21:59:55,808] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[21:59:55,811] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[21:59:55,879] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[21:59:55,970] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[21:59:55,972] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2b15ba1a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[21:59:56,014] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@796fe2b5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[22:17:04,926] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[22:17:05,753] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[22:17:06,112] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[22:17:06,795] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[22:17:09,463] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[22:17:10,093] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[22:17:10,298] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[22:17:10,349] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@62b0bf85] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[22:17:10,378] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@44d43cc9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[22:17:10,502] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[22:17:11,358] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[22:17:15,022] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[22:17:15,062] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7417ef4f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[22:17:15,118] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7f2c995b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[22:20:03,948] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[22:20:04,429] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[22:20:04,590] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[22:20:04,981] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[22:20:06,745] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[22:20:06,774] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@388f1258] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[22:20:06,789] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1c00d406] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[00:12:52,150] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[00:12:52,822] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[00:12:53,172] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[00:12:53,785] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[00:12:56,008] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[00:12:56,035] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3a0896b3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[00:12:56,076] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@66a82a13] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[00:14:27,464] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[00:14:27,945] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[00:14:28,126] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[00:14:28,549] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[00:14:30,123] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[00:14:30,143] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7b18658a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[00:14:30,172] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2322e56f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[00:14:30,320] ERROR [net.aspect.education.hibernate.HibernateRunner: 41] Exception: 
+java.lang.NullPointerException: Cannot invoke "net.aspect.education.hibernate.entity.User.getProfile()" because "user1" is null
+	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:36)
+[00:16:18,190] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[00:16:18,740] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[00:16:18,921] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[00:16:19,354] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[00:16:21,037] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[00:16:21,059] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2871ac91] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[00:16:21,467] ERROR [net.aspect.education.hibernate.HibernateRunner: 44] Exception: 
+org.hibernate.id.IdentifierGenerationException: Identifier of entity 'net.aspect.education.hibernate.entity.Profile' must be manually assigned before calling 'persist()'
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:208)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:803)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:751)
+	at org.hibernate.engine.spi.CascadingActions$7.cascade(CascadingActions.java:295)
+	at org.hibernate.engine.spi.CascadingActions$7.cascade(CascadingActions.java:285)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:570)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:492)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:253)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:192)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeAfterSave(AbstractSaveEventListener.java:520)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:319)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:223)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745)
+	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:36)
+[00:17:10,084] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[00:17:10,628] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[00:17:10,864] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[00:17:11,386] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[00:17:13,140] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[00:17:13,168] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3c54ddec] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[00:24:49,230] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[00:24:49,718] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[00:24:49,888] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[00:24:50,309] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[00:24:51,966] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[00:24:51,995] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6aa7e176] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[01:04:01,948] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[01:04:02,576] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[01:04:02,858] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[01:04:03,512] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[01:04:06,040] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[01:04:06,074] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@256bb5be] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[01:04:06,619] ERROR [net.aspect.education.hibernate.HibernateRunner: 61] Exception: 
+java.lang.NullPointerException: Cannot invoke "net.aspect.education.hibernate.entity.Company.getUsers()" because the return value of "net.aspect.education.hibernate.entity.User.getCompany()" is null
+	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:54)
+[01:04:54,091] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[01:04:54,823] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
+[01:04:55,112] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[01:04:55,793] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate]
+	Database driver: org.postgresql.Driver
+	Database version: 17.2
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[01:04:58,458] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[01:04:58,491] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5c3d4f05] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[01:04:59,003] ERROR [net.aspect.education.hibernate.HibernateRunner: 61] Exception: 
+java.lang.NullPointerException: Cannot invoke "net.aspect.education.hibernate.entity.Company.getName()" because the return value of "net.aspect.education.hibernate.entity.User.getCompany()" is null
+	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:54)

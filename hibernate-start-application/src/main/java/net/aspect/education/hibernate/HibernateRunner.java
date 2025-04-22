@@ -5,10 +5,14 @@ import net.aspect.education.hibernate.entity.*;
 import net.aspect.education.hibernate.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.graph.GraphSemantic;
+import org.hibernate.graph.RootGraph;
+import org.hibernate.graph.SubGraph;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.time.LocalDate;
+import java.util.Map;
 
 @Slf4j
 public class HibernateRunner {
@@ -29,14 +33,26 @@ public class HibernateRunner {
                 .company(company)
                 .build();
 
+        Profile profile = Profile.builder().street("Borisova").language("ru").build();
+
+        profile.setUser(user);
+
         try (SessionFactory factory = HibernateUtil.buildSessionFactory();
              Session session = factory.openSession()) {
             session.beginTransaction();
 
-//            User user2 = session.get(User.class, 1);
-//            System.out.println(user2);
-            session.merge(user);
-//            System.out.println(user2.getCompany().getName());
+            RootGraph<User> userGraph = session.createEntityGraph(User.class);
+            userGraph.addAttributeNodes("company", "userChats");
+            SubGraph<UserChat> userChatsSubgraph = userGraph.addSubgraph("userChats", UserChat.class);
+            userChatsSubgraph.addAttributeNodes("chat");
+
+            Map<String, Object> properties = Map.of(
+                    GraphSemantic.LOAD.getJakartaHintName(), userGraph
+            );
+
+            var userGet = session.find(User.class, 1L, properties);
+            System.out.println(userGet.getCompany().getName());
+            System.out.println(userGet.getUserChats().size());
 
             session.getTransaction().commit();
         } catch (Exception e) {
