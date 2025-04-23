@@ -1,5 +1,6 @@
 package net.aspect.education.hibernate;
 
+import jakarta.persistence.LockModeType;
 import lombok.extern.slf4j.Slf4j;
 import net.aspect.education.hibernate.entity.*;
 import net.aspect.education.hibernate.util.HibernateUtil;
@@ -12,52 +13,32 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Map;
 
 @Slf4j
 public class HibernateRunner {
 
     public static void main(String[] args) {
-        Company company = Company.builder()
-                .name("Yandex")
-                .build();
-
-        User user = User.builder()
-                .username("mordor@developer.ru")
-                .personalInfo(PersonalInfo.builder()
-                        .firstname("Slavenia")
-                        .lastname("Mordor")
-                        .birthDate(new Birthday(LocalDate.of(2222, 10, 3)))
-                        .build())
-                .role(Role.ADMIN)
-                .company(company)
-                .build();
-
-        Profile profile = Profile.builder().street("Borisova").language("ru").build();
-
-        profile.setUser(user);
-
-        try (SessionFactory factory = HibernateUtil.buildSessionFactory();
-             Session session = factory.openSession()) {
+        SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
+        User user = null;
+        try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
-
-            RootGraph<User> userGraph = session.createEntityGraph(User.class);
-            userGraph.addAttributeNodes("company", "userChats");
-            SubGraph<UserChat> userChatsSubgraph = userGraph.addSubgraph("userChats", UserChat.class);
-            userChatsSubgraph.addAttributeNodes("chat");
-
-            Map<String, Object> properties = Map.of(
-                    GraphSemantic.LOAD.getJakartaHintName(), userGraph
-            );
-
-            var userGet = session.find(User.class, 1L, properties);
-            System.out.println(userGet.getCompany().getName());
-            System.out.println(userGet.getUserChats().size());
-
+            user = session.find(User.class, 1L);
+            var user1 = session.find(User.class, 1L);
+            user1.getCompany();
             session.getTransaction().commit();
         } catch (Exception e) {
-            log.error("Exception: ", e);
-            throw e;
+            sessionFactory.close();
+        }
+
+        try (Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+            var user2 = session.find(User.class, 1L);
+            user2.getCompany();
+            session.getTransaction().commit();
+        } catch (Exception e) {
+            sessionFactory.close();
         }
     }
 }

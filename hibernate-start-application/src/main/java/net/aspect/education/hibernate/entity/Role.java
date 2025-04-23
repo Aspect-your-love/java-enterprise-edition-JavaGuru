@@ -1,5 +1,5 @@
 package net.aspect.education.hibernate.entity;
 
 public enum Role {
-    ADMIN, USER;
+    ADMIN, USER, DEV, MANAGER, SALER;
 }

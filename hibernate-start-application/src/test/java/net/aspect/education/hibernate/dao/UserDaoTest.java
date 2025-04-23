@@ -13,14 +13,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+
 
 class UserDaoTest {
 
     private final UserDao userDao = UserDao.getInstance();
 
     @Test
-    @Disabled
     void findAll() {
         @Cleanup SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
         @Cleanup Session session = sessionFactory.openSession();
@@ -38,7 +37,8 @@ class UserDaoTest {
     }
 
     @Test
-    public void findAllByFirstName(){
+    @Disabled
+    public void findAllByFirstName() {
         @Cleanup SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
         @Cleanup Session session = sessionFactory.openSession();
 
@@ -70,5 +70,6 @@ class UserDaoTest {
         session.getTransaction().commit();
 
         assertThat(list).containsAnyOf("buba@kaluga.ru", "buba-2@kaluga.ru");
+
     }
 }

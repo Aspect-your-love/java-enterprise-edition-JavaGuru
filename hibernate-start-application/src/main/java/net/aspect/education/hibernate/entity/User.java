@@ -4,17 +4,13 @@ package net.aspect.education.hibernate.entity;
 import jakarta.persistence.*;
 import lombok.*;
 import net.aspect.education.hibernate.converter.BirthdayConverter;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.envers.Audited;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@NamedEntityGraph(
-        name="withCompanyAndChat",
-        attributeNodes={
-                @NamedAttributeNode("company"),
-                @NamedAttributeNode(value="userChats", subgraph="chat")
-        }
-)
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -24,6 +20,8 @@ import java.util.List;
 @Entity
 @Table(name="users", schema="public")
 @Inheritance(strategy = InheritanceType.JOINED)
+@Cacheable
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,6 +32,10 @@ public class User {
     private PersonalInfo personalInfo;
     @Enumerated(EnumType.STRING)
     private Role role;
+
+    @Builder.Default
+    @OneToMany(mappedBy="receiver", fetch=FetchType.LAZY)
+    private List<Payment> payments = new ArrayList<>();
 
     @ManyToOne(optional = true, fetch=FetchType.LAZY)
     @JoinColumn(name="company_id")
