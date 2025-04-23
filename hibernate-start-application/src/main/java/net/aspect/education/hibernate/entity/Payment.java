@@ -12,12 +12,9 @@ import org.hibernate.envers.NotAudited;
 @AllArgsConstructor
 @Builder
 @Entity
+//@ToString(exclude = "receiver")
 @Table(name = "payments")
-public class Payment {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+public class Payment extends BaseEntity<Long> {
 
     @Column(nullable = false, name = "amount")
     private Integer amount;

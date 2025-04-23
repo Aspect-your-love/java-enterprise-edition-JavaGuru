@@ -16,16 +16,13 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 @EqualsAndHashCode(of={"username", "profile", "userChats"})
-@ToString(exclude = "company")
+@ToString(exclude = {"company", "userChats", "payments"})
 @Entity
 @Table(name="users", schema="public")
 @Inheritance(strategy = InheritanceType.JOINED)
 @Cacheable
 @org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
-public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class User extends BaseEntity<Long>{
     @Column(name="username", unique = true, nullable = false)
     private String username;
     @Embedded

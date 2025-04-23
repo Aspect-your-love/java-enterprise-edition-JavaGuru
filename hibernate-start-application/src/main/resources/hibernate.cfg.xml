@@ -34,9 +34,10 @@
         <property name="hibernate.cache.use_query_cache">true</property>
         <property name="javax.cache.provider">org.ehcache.jsr107.EhcacheCachingProvider</property>
         <property name="hibernate.javax.cache.uri">ehcache.xml</property>
+        <property name="current_session_context_class">thread</property>
         <!--Диалект выбирается автоматически-->
         <!-- DB schema will be updated if needed -->
-        <!-- <property name="hibernate.hbm2ddl.auto">create</property> -->
+<!--         <property name="hibernate.hbm2ddl.auto">create</property>-->
         <mapping class="net.aspect.education.hibernate.entity.User"/>
         <mapping class="net.aspect.education.hibernate.entity.Company"/>
         <mapping class="net.aspect.education.hibernate.entity.Profile"/>
