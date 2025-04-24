@@ -1,725 +1,4 @@
-[10:49:28,512] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[10:49:29,245] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[10:49:29,758] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[10:49:30,897] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[10:49:34,766] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[10:49:34,810] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@69a40b3c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[10:49:36,062] ERROR [net.aspect.education.hibernate.HibernateRunner: 53] Exception: 
-org.hibernate.id.IdentifierGenerationException: Identifier of entity 'net.aspect.education.hibernate.entity.Profile' must be manually assigned before calling 'persist()'
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:208)
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136)
-	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177)
-	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761)
-	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745)
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:46)
-[10:49:50,008] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[10:49:50,928] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[10:49:51,192] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[10:49:52,153] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[10:49:55,649] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[10:49:55,685] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5a592c70] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[10:49:55,802] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@63e5b8aa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[10:49:56,276] ERROR [net.aspect.education.hibernate.HibernateRunner: 53] Exception: 
-org.hibernate.id.IdentifierGenerationException: Identifier of entity 'net.aspect.education.hibernate.entity.Profile' must be manually assigned before calling 'persist()'
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:208)
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136)
-	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177)
-	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761)
-	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745)
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:46)
-[10:52:50,194] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[10:52:50,899] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[10:52:51,262] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[10:52:52,763] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[10:52:59,095] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[10:52:59,155] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2ca3d826] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[10:52:59,269] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1cd2ff5b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[10:52:59,792] ERROR [net.aspect.education.hibernate.HibernateRunner: 54] Exception: 
-java.lang.IllegalStateException: org.hibernate.TransientObjectException: persistent instance references an unsaved transient instance of 'net.aspect.education.hibernate.entity.Company' (save the transient instance before flushing)
-	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157)
-	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:167)
-	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:173)
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1433)
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:491)
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2354)
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1978)
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:52)
-Caused by: org.hibernate.TransientObjectException: persistent instance references an unsaved transient instance of 'net.aspect.education.hibernate.entity.Company' (save the transient instance before flushing)
-	at org.hibernate.engine.spi.CascadingActions$9.cascade(CascadingActions.java:382)
-	at org.hibernate.engine.spi.CascadingActions$9.cascade(CascadingActions.java:372)
-	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:570)
-	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:492)
-	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:253)
-	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:192)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.prepareEntityFlushes(AbstractFlushingEventListener.java:169)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.preFlush(AbstractFlushingEventListener.java:107)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:82)
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1429)
-	... 8 more
-[10:53:43,394] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[10:53:44,092] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[10:53:44,369] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[10:53:45,275] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[10:53:49,098] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[10:53:49,139] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6380e9e9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[10:53:49,223] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@14b4340c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[10:53:49,695] ERROR [net.aspect.education.hibernate.HibernateRunner: 56] Exception: 
-org.hibernate.PropertyValueException: not-null property references a null or transient value: net.aspect.education.hibernate.entity.Payment.receiver
-	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:112)
-	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:57)
-	at org.hibernate.action.internal.AbstractEntityInsertAction.nullifyTransientReferencesIfNotAlready(AbstractEntityInsertAction.java:126)
-	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:73)
-	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:682)
-	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:293)
-	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:274)
-	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:324)
-	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:393)
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:307)
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:223)
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136)
-	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177)
-	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761)
-	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745)
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:49)
-[10:55:05,477] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[10:55:06,363] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[10:55:06,621] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[10:55:07,632] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[10:55:10,993] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[10:55:11,036] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@8b13d91] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[10:55:11,135] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6cbb7a7d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[10:55:11,582] ERROR [net.aspect.education.hibernate.HibernateRunner: 55] Exception: 
-org.hibernate.id.IdentifierGenerationException: Identifier of entity 'net.aspect.education.hibernate.entity.Profile' must be manually assigned before calling 'persist()'
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:208)
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136)
-	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177)
-	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761)
-	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745)
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:50)
-[10:55:50,843] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[10:55:51,553] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[10:55:51,840] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[10:55:53,069] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[10:55:56,596] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[10:55:56,633] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3caee3a8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[10:55:56,738] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f6cce7f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[10:55:57,281] ERROR [net.aspect.education.hibernate.HibernateRunner: 55] Exception: 
-org.hibernate.id.IdentifierGenerationException: Identifier of entity 'net.aspect.education.hibernate.entity.Profile' must be manually assigned before calling 'persist()'
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:208)
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136)
-	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177)
-	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761)
-	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745)
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:48)
-[10:58:16,130] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[10:58:16,950] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[10:58:17,375] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[10:58:18,542] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[10:58:23,109] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[10:58:23,174] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@256bb5be] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[10:58:23,310] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6380e9e9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[10:59:05,213] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[10:59:06,079] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[10:59:06,325] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[10:59:07,326] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[10:59:11,182] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[10:59:11,224] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@74f280bd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[10:59:11,313] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2dfa02c1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[10:59:11,789] ERROR [net.aspect.education.hibernate.HibernateRunner: 51] Exception: 
-java.lang.IllegalStateException: org.hibernate.TransientObjectException: persistent instance references an unsaved transient instance of 'net.aspect.education.hibernate.entity.Company' (save the transient instance before flushing)
-	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157)
-	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:167)
-	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:173)
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1433)
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:491)
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2354)
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1978)
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:49)
-Caused by: org.hibernate.TransientObjectException: persistent instance references an unsaved transient instance of 'net.aspect.education.hibernate.entity.Company' (save the transient instance before flushing)
-	at org.hibernate.engine.spi.CascadingActions$9.cascade(CascadingActions.java:382)
-	at org.hibernate.engine.spi.CascadingActions$9.cascade(CascadingActions.java:372)
-	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:570)
-	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:492)
-	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:253)
-	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:192)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.prepareEntityFlushes(AbstractFlushingEventListener.java:169)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.preFlush(AbstractFlushingEventListener.java:107)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:82)
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1429)
-	... 8 more
-[11:01:23,029] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[11:01:23,981] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[11:01:24,266] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[11:01:25,348] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[11:01:29,013] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[11:01:29,051] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5c8d58ed] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[11:01:29,155] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@45037e16] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[11:01:29,569] ERROR [net.aspect.education.hibernate.HibernateRunner: 58] Exception: 
-org.hibernate.id.IdentifierGenerationException: Identifier of entity 'net.aspect.education.hibernate.entity.Profile' must be manually assigned before calling 'persist()'
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:208)
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136)
-	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177)
-	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761)
-	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745)
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:53)
-[12:25:29,778] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[12:25:30,944] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[12:25:31,219] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[12:25:32,274] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[12:25:36,753] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[12:25:36,804] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7ac48e10] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[12:25:36,967] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4f235107] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[12:25:37,746] ERROR [net.aspect.education.hibernate.HibernateRunner: 54] Exception: 
-java.lang.NullPointerException: Cannot invoke "net.aspect.education.hibernate.entity.Payment.getAmount()" because "payment1" is null
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:51)
-[12:26:25,786] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[12:26:26,772] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[12:26:27,340] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[12:26:28,267] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[12:26:32,285] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[12:26:32,328] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@16d431b4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[12:26:32,448] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@48d739f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[12:26:32,883] ERROR [net.aspect.education.hibernate.HibernateRunner: 54] Exception: 
-java.lang.NullPointerException: Cannot invoke "net.aspect.education.hibernate.entity.Payment.getAmount()" because "payment1" is null
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:51)
-[14:50:23,865] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[14:50:24,927] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[14:50:25,333] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[14:50:26,400] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[14:50:26,474] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[14:50:27,931] INFO [org.hibernate.envers.configuration.internal.metadata.AuditMetadataGenerator: 322] Adding properties for entity: net.aspect.education.hibernate.entity.Payment
-[14:50:31,865] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[14:50:31,953] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1b31af02] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[14:50:32,196] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1d2d8846] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[14:50:32,810] WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions: 149] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
-	Unsaved transient entity: ([net.aspect.education.hibernate.entity.User#<null>])
-	Dependent entities: ([[net.aspect.education.hibernate.entity.Payment#<null>]])
-	Non-nullable association(s): ([net.aspect.education.hibernate.entity.Payment.receiver])
-[14:50:32,826] ERROR [net.aspect.education.hibernate.HibernateRunner: 53] Exception: 
-java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation: net.aspect.education.hibernate.entity.Payment.receiver -> net.aspect.education.hibernate.entity.User
-	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157)
-	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:167)
-	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:173)
-	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:778)
-	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745)
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:49)
-Caused by: org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation: net.aspect.education.hibernate.entity.Payment.receiver -> net.aspect.education.hibernate.entity.User
-	at org.hibernate.action.internal.UnresolvedEntityInsertActions.checkNoUnresolvedActionsAfterOperation(UnresolvedEntityInsertActions.java:123)
-	at org.hibernate.engine.spi.ActionQueue.checkNoUnresolvedActionsAfterOperation(ActionQueue.java:461)
-	at org.hibernate.internal.SessionImpl.checkNoUnresolvedActionsAfterOperation(SessionImpl.java:601)
-	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:775)
-	... 2 more
-[14:55:26,962] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[14:55:27,842] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[14:55:28,151] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[14:55:29,272] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[14:55:29,339] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[14:55:30,417] INFO [org.hibernate.envers.configuration.internal.metadata.AuditMetadataGenerator: 322] Adding properties for entity: net.aspect.education.hibernate.entity.Payment
-[14:55:33,705] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[14:58:23,513] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[14:58:24,482] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[14:58:24,802] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[14:58:25,725] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[14:58:25,791] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[14:58:26,731] INFO [org.hibernate.envers.configuration.internal.metadata.AuditMetadataGenerator: 322] Adding properties for entity: net.aspect.education.hibernate.entity.Payment
-[14:58:29,945] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[14:59:50,963] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[14:59:53,893] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[14:59:55,047] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[14:59:56,805] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[14:59:57,108] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[14:59:58,473] INFO [org.hibernate.envers.configuration.internal.metadata.AuditMetadataGenerator: 322] Adding properties for entity: net.aspect.education.hibernate.entity.Payment
-[15:00:06,061] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[15:00:06,423] ERROR [net.aspect.education.hibernate.HibernateRunner: 33] Exception: 
-java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because "current" is null
-	at org.hibernate.type.descriptor.java.LongJavaType.next(LongJavaType.java:213)
-	at org.hibernate.type.descriptor.java.LongJavaType.next(LongJavaType.java:24)
-	at org.hibernate.engine.internal.Versioning.increment(Versioning.java:167)
-	at org.hibernate.generator.internal.VersionGeneration.generate(VersionGeneration.java:51)
-	at org.hibernate.engine.internal.Versioning.incrementVersion(Versioning.java:152)
-	at org.hibernate.event.internal.DefaultFlushEntityEventListener.getNextVersion(DefaultFlushEntityEventListener.java:408)
-	at org.hibernate.event.internal.DefaultFlushEntityEventListener.scheduleUpdate(DefaultFlushEntityEventListener.java:254)
-	at org.hibernate.event.internal.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:150)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:269)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:90)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:84)
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1429)
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:491)
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2354)
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1978)
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:31)
-[15:01:25,740] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[15:01:26,546] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[15:01:26,895] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[15:01:27,883] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[15:01:27,961] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[15:01:28,944] INFO [org.hibernate.envers.configuration.internal.metadata.AuditMetadataGenerator: 322] Adding properties for entity: net.aspect.education.hibernate.entity.Payment
-[15:01:32,243] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[15:01:32,477] ERROR [net.aspect.education.hibernate.HibernateRunner: 33] Exception: 
-java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because "current" is null
-	at org.hibernate.type.descriptor.java.LongJavaType.next(LongJavaType.java:213)
-	at org.hibernate.type.descriptor.java.LongJavaType.next(LongJavaType.java:24)
-	at org.hibernate.engine.internal.Versioning.increment(Versioning.java:167)
-	at org.hibernate.generator.internal.VersionGeneration.generate(VersionGeneration.java:51)
-	at org.hibernate.engine.internal.Versioning.incrementVersion(Versioning.java:152)
-	at org.hibernate.event.internal.DefaultFlushEntityEventListener.getNextVersion(DefaultFlushEntityEventListener.java:408)
-	at org.hibernate.event.internal.DefaultFlushEntityEventListener.scheduleUpdate(DefaultFlushEntityEventListener.java:254)
-	at org.hibernate.event.internal.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:150)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:269)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:90)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:84)
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1429)
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:491)
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2354)
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1978)
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:31)
-[15:02:09,291] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[15:02:09,982] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[15:02:10,248] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[15:02:11,158] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[15:02:11,220] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[15:02:11,996] INFO [org.hibernate.envers.configuration.internal.metadata.AuditMetadataGenerator: 322] Adding properties for entity: net.aspect.education.hibernate.entity.Payment
-[15:02:14,421] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[15:02:14,620] ERROR [net.aspect.education.hibernate.HibernateRunner: 33] Exception: 
-java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because "current" is null
-	at org.hibernate.type.descriptor.java.LongJavaType.next(LongJavaType.java:213)
-	at org.hibernate.type.descriptor.java.LongJavaType.next(LongJavaType.java:24)
-	at org.hibernate.engine.internal.Versioning.increment(Versioning.java:167)
-	at org.hibernate.generator.internal.VersionGeneration.generate(VersionGeneration.java:51)
-	at org.hibernate.engine.internal.Versioning.incrementVersion(Versioning.java:152)
-	at org.hibernate.event.internal.DefaultFlushEntityEventListener.getNextVersion(DefaultFlushEntityEventListener.java:408)
-	at org.hibernate.event.internal.DefaultFlushEntityEventListener.scheduleUpdate(DefaultFlushEntityEventListener.java:254)
-	at org.hibernate.event.internal.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:150)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:269)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:90)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:84)
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1429)
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:491)
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2354)
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1978)
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:31)
-[15:02:54,422] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[15:02:55,172] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[15:02:55,414] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[15:02:56,361] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[15:02:56,421] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[15:02:57,242] INFO [org.hibernate.envers.configuration.internal.metadata.AuditMetadataGenerator: 322] Adding properties for entity: net.aspect.education.hibernate.entity.Payment
-[15:03:00,536] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[15:03:00,761] ERROR [net.aspect.education.hibernate.HibernateRunner: 33] Exception: 
-java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because "current" is null
-	at org.hibernate.type.descriptor.java.LongJavaType.next(LongJavaType.java:213)
-	at org.hibernate.type.descriptor.java.LongJavaType.next(LongJavaType.java:24)
-	at org.hibernate.engine.internal.Versioning.increment(Versioning.java:167)
-	at org.hibernate.generator.internal.VersionGeneration.generate(VersionGeneration.java:51)
-	at org.hibernate.engine.internal.Versioning.incrementVersion(Versioning.java:152)
-	at org.hibernate.event.internal.DefaultFlushEntityEventListener.getNextVersion(DefaultFlushEntityEventListener.java:408)
-	at org.hibernate.event.internal.DefaultFlushEntityEventListener.scheduleUpdate(DefaultFlushEntityEventListener.java:254)
-	at org.hibernate.event.internal.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:150)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:269)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:90)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:84)
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1429)
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:491)
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2354)
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1978)
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:31)
-[15:03:08,963] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[15:03:09,579] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[15:03:09,835] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[15:03:10,564] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[15:03:10,616] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[15:03:11,403] INFO [org.hibernate.envers.configuration.internal.metadata.AuditMetadataGenerator: 322] Adding properties for entity: net.aspect.education.hibernate.entity.Payment
-[15:03:13,890] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[15:05:50,755] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[15:05:51,649] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[15:05:51,926] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[15:05:52,958] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[15:05:53,025] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[15:05:54,374] INFO [org.hibernate.envers.configuration.internal.metadata.AuditMetadataGenerator: 322] Adding properties for entity: net.aspect.education.hibernate.entity.Payment
-[15:05:58,023] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[16:00:28,569] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[16:01:39,329] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[16:01:40,271] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[16:01:40,561] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[16:01:41,721] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[16:01:41,785] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[16:01:43,840] INFO [org.hibernate.service.internal.AbstractServiceRegistryImpl: 388] HHH000369: Error stopping service [class org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-java.lang.NullPointerException: Cannot invoke "javax.cache.CacheManager.close()" because "this.cacheManager" is null
-	at org.hibernate.cache.jcache.internal.JCacheRegionFactory.releaseFromUse(JCacheRegionFactory.java:288)
-	at org.hibernate.cache.spi.AbstractRegionFactory.stop(AbstractRegionFactory.java:111)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.stopService(AbstractServiceRegistryImpl.java:385)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.destroy(AbstractServiceRegistryImpl.java:366)
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.destroy(StandardServiceRegistryImpl.java:142)
-	at org.hibernate.service.spi.ServiceRegistryImplementor.close(ServiceRegistryImplementor.java:32)
-	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1002)
-	at net.aspect.education.hibernate.util.HibernateUtil.buildSessionFactory(HibernateUtil.java:13)
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:23)
-[16:05:47,513] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[16:05:48,430] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[16:05:48,812] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[16:05:50,156] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[16:05:50,284] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[16:05:52,458] INFO [org.hibernate.service.internal.AbstractServiceRegistryImpl: 388] HHH000369: Error stopping service [class org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-java.lang.NullPointerException: Cannot invoke "javax.cache.CacheManager.close()" because "this.cacheManager" is null
-	at org.hibernate.cache.jcache.internal.JCacheRegionFactory.releaseFromUse(JCacheRegionFactory.java:288)
-	at org.hibernate.cache.spi.AbstractRegionFactory.stop(AbstractRegionFactory.java:111)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.stopService(AbstractServiceRegistryImpl.java:385)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.destroy(AbstractServiceRegistryImpl.java:366)
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.destroy(StandardServiceRegistryImpl.java:142)
-	at org.hibernate.service.spi.ServiceRegistryImplementor.close(ServiceRegistryImplementor.java:32)
-	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1002)
-	at net.aspect.education.hibernate.util.HibernateUtil.buildSessionFactory(HibernateUtil.java:13)
-	at net.aspect.education.hibernate.HibernateRunner.main(HibernateRunner.java:23)
-[16:11:42,637] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[16:11:43,555] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[16:11:43,842] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[16:11:44,919] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[16:11:44,987] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[16:11:46,948] WARN [org.hibernate.orm.cache: 120] HHH90001002: Attempt to restop an already stopped JCacheRegionFactory.
-[16:12:39,735] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[16:12:40,648] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[16:12:40,935] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[16:12:41,969] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[16:12:42,043] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[16:12:43,624] WARN [org.hibernate.orm.cache: 120] HHH90001002: Attempt to restop an already stopped JCacheRegionFactory.
-[16:16:23,132] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[16:16:24,018] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[16:16:24,303] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[16:16:25,406] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[16:16:25,473] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[16:16:27,862] WARN [org.hibernate.orm.cache: 120] HHH90001002: Attempt to restop an already stopped JCacheRegionFactory.
-[16:21:47,700] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[16:21:48,646] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[16:21:49,152] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[16:21:51,184] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[16:21:51,270] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[16:21:53,233] WARN [org.hibernate.orm.cache: 120] HHH90001002: Attempt to restop an already stopped JCacheRegionFactory.
-[16:23:56,050] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[16:23:56,858] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[16:23:57,325] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[16:23:58,353] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[16:23:58,449] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[16:24:00,357] WARN [org.hibernate.orm.cache: 120] HHH90001002: Attempt to restop an already stopped JCacheRegionFactory.
-[16:34:41,052] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[16:34:41,965] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[16:34:42,446] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[16:34:44,015] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[16:34:44,097] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[16:34:48,041] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[16:34:48,084] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[16:34:48,128] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[16:34:50,723] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[16:36:25,615] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[16:36:26,443] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[16:36:26,905] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[16:36:28,106] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[16:36:28,196] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[16:36:31,509] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[16:36:31,752] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[16:36:33,791] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[16:38:10,174] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[16:38:11,301] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[16:38:11,774] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[16:38:14,001] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[16:38:14,123] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[16:38:20,948] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[16:38:21,008] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[16:38:21,062] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[16:38:25,606] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[16:42:28,227] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[16:42:29,302] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[16:42:29,790] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[16:42:31,128] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.4
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[16:42:31,216] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[16:42:36,568] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[16:42:36,614] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[16:42:36,650] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[16:42:39,074] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[21:38:18,305] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[21:38:18,971] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[21:38:19,209] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[21:38:19,761] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+[23:05:05,359] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
 	Database driver: org.postgresql.Driver
 	Database version: 17.2
@@ -727,17 +6,14 @@ java.lang.NullPointerException: Cannot invoke "javax.cache.CacheManager.close()"
 	Isolation level: undefined/unknown
 	Minimum pool size: 1
 	Maximum pool size: 20
-[21:38:19,800] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[21:38:21,141] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:38:21,159] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:38:21,176] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:38:22,097] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[21:38:22,118] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3fd5d679] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[21:38:22,167] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7742a276] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[21:49:51,791] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[21:49:52,329] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[21:49:52,544] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[21:49:53,033] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+[23:05:05,414] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
+[23:05:07,640] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:05:07,673] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:05:07,703] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:05:28,830] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[23:05:29,320] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
+[23:05:29,483] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[23:05:29,958] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
 	Database driver: org.postgresql.Driver
 	Database version: 17.2
@@ -745,15 +21,14 @@ java.lang.NullPointerException: Cannot invoke "javax.cache.CacheManager.close()"
 	Isolation level: undefined/unknown
 	Minimum pool size: 1
 	Maximum pool size: 20
-[21:49:53,079] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[21:49:54,567] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:49:54,594] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:49:54,617] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:49:55,546] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[21:51:34,526] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[21:51:34,982] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[21:51:35,139] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[21:51:35,523] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+[23:05:29,991] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
+[23:05:31,203] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:05:31,224] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:05:31,245] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:06:43,438] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[23:06:44,331] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
+[23:06:44,823] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[23:06:45,983] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
 	Database driver: org.postgresql.Driver
 	Database version: 17.2
@@ -761,15 +36,14 @@ java.lang.NullPointerException: Cannot invoke "javax.cache.CacheManager.close()"
 	Isolation level: undefined/unknown
 	Minimum pool size: 1
 	Maximum pool size: 20
-[21:51:35,565] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[21:51:36,834] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:51:36,851] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:51:36,867] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:51:37,713] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[21:51:55,406] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[21:51:55,916] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[21:51:56,106] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[21:51:56,600] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+[23:06:46,070] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
+[23:06:49,244] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:06:49,296] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:06:49,330] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:08:20,547] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[23:08:21,473] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
+[23:08:21,938] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[23:08:22,725] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
 	Database driver: org.postgresql.Driver
 	Database version: 17.2
@@ -777,15 +51,14 @@ java.lang.NullPointerException: Cannot invoke "javax.cache.CacheManager.close()"
 	Isolation level: undefined/unknown
 	Minimum pool size: 1
 	Maximum pool size: 20
-[21:51:56,633] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[21:51:58,033] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:51:58,066] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:51:58,088] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:51:58,945] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[21:53:43,851] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[21:53:44,378] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[21:53:44,556] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[21:53:44,932] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+[23:08:22,788] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
+[23:08:25,716] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:08:25,765] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:08:25,803] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:09:20,378] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[23:09:21,156] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
+[23:09:21,543] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[23:09:22,412] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
 	Database driver: org.postgresql.Driver
 	Database version: 17.2
@@ -793,15 +66,14 @@ java.lang.NullPointerException: Cannot invoke "javax.cache.CacheManager.close()"
 	Isolation level: undefined/unknown
 	Minimum pool size: 1
 	Maximum pool size: 20
-[21:53:44,965] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[21:53:46,204] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:53:46,228] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:53:46,248] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:53:47,149] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[21:56:03,587] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[21:56:04,252] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[21:56:04,497] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[21:56:05,043] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+[23:09:22,475] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
+[23:09:29,596] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:09:29,642] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:09:29,677] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:11:41,685] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[23:11:42,159] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
+[23:11:42,335] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[23:11:42,822] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
 	Database driver: org.postgresql.Driver
 	Database version: 17.2
@@ -809,15 +81,16 @@ java.lang.NullPointerException: Cannot invoke "javax.cache.CacheManager.close()"
 	Isolation level: undefined/unknown
 	Minimum pool size: 1
 	Maximum pool size: 20
-[21:56:05,096] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[21:56:06,856] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:56:06,878] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:56:06,905] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:56:08,098] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[21:56:51,784] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[21:56:52,320] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[21:56:52,482] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[21:56:52,998] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+[23:11:42,850] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
+[23:11:44,164] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:11:44,182] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:11:44,198] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:11:45,142] ERROR [org.hibernate.orm.connections.pooling: 483] Connection leak detected: there are 1 unclosed connections upon shutting down pool jdbc:postgresql://localhost:5432/test
+[23:11:45,143] ERROR [org.hibernate.orm.connections.pooling: 311] Connection leak detected: there are 1 unclosed connections
+[23:11:59,378] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[23:11:59,920] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
+[23:12:00,094] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[23:12:00,569] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
 	Database driver: org.postgresql.Driver
 	Database version: 17.2
@@ -825,15 +98,19 @@ java.lang.NullPointerException: Cannot invoke "javax.cache.CacheManager.close()"
 	Isolation level: undefined/unknown
 	Minimum pool size: 1
 	Maximum pool size: 20
-[21:56:53,037] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[21:56:54,290] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:56:54,308] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:56:54,325] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:56:55,102] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[21:58:12,599] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[21:58:13,190] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[21:58:13,398] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[21:58:13,963] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
+[23:12:00,599] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
+[23:12:01,789] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:12:01,806] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:12:01,823] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:12:02,882] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 145] SQL Error: 0, SQLState: 23503
+[23:12:02,882] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper: 150] ОШИБКА: UPDATE или DELETE в таблице "users" нарушает ограничение внешнего ключа "fks3ufuyecnucmu8dbeodxq7l80" таблицы "payments"
+  Подробности: На ключ (id)=(2) всё ещё есть ссылки в таблице "payments".
+[23:12:02,896] ERROR [org.hibernate.orm.connections.pooling: 483] Connection leak detected: there are 1 unclosed connections upon shutting down pool jdbc:postgresql://localhost:5432/test
+[23:12:02,897] ERROR [org.hibernate.orm.connections.pooling: 311] Connection leak detected: there are 1 unclosed connections
+[23:12:28,323] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
+[23:12:28,748] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
+[23:12:28,894] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
+[23:12:29,276] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
 	Database driver: org.postgresql.Driver
 	Database version: 17.2
@@ -841,82 +118,9 @@ java.lang.NullPointerException: Cannot invoke "javax.cache.CacheManager.close()"
 	Isolation level: undefined/unknown
 	Minimum pool size: 1
 	Maximum pool size: 20
-[21:58:14,045] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[21:58:16,358] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:58:16,390] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:58:16,415] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:58:44,848] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[21:58:45,282] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[21:58:45,428] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[21:58:45,828] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.2
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[21:58:45,866] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[21:58:47,109] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:58:47,125] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:58:47,142] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:59:18,659] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[21:59:19,283] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[21:59:19,536] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[21:59:20,319] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.2
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[21:59:20,459] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[21:59:23,275] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:59:23,300] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[21:59:23,327] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[22:00:32,495] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[22:00:32,916] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[22:00:33,086] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[22:00:33,586] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.2
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[22:00:33,629] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[22:00:34,850] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[22:00:34,870] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[22:00:34,890] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[22:28:37,889] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[22:28:38,781] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[22:28:39,064] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[22:28:39,871] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.2
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[22:28:39,953] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[22:28:42,372] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[22:28:42,394] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[22:28:42,420] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[22:59:56,026] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.6.13.Final
-[22:59:56,774] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 53] HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
-[22:59:57,085] WARN [org.hibernate.orm.connections.pooling: 86] HHH10001002: Using built-in connection pool (not intended for production use)
-[22:59:57,911] INFO [org.hibernate.orm.connections.pooling: 157] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/test]
-	Database driver: org.postgresql.Driver
-	Database version: 17.2
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-[22:59:57,976] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
-[22:59:59,647] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[22:59:59,673] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
-[22:59:59,693] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:12:29,312] INFO [org.hibernate.envers.boot.internal.EnversServiceImpl: 76] Envers integration enabled? : true
+[23:12:30,526] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-update-timestamps-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:12:30,547] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:12:30,566] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[net.aspect.education.hibernate.entity.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[23:12:31,648] ERROR [org.hibernate.orm.connections.pooling: 483] Connection leak detected: there are 1 unclosed connections upon shutting down pool jdbc:postgresql://localhost:5432/test
+[23:12:31,648] ERROR [org.hibernate.orm.connections.pooling: 311] Connection leak detected: there are 1 unclosed connections
