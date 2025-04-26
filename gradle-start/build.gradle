@@ -1,3 +1,5 @@
+import java.time.LocalDateTime
+
 plugins {
     id 'java'
 }
@@ -9,9 +11,23 @@ repositories {
     mavenCentral()
 }
 
+ext {
+    javaVersion = 21
+    currentDateTime = LocalDateTime.now()
+}
+
+println ext.javaVersion
+println "*----------*"
+println ext.currentDateTime
+println "*----------*"
+
+apply from: 'gradle/scripts/script-1.gradle'
+apply plugin: CustomPluginFromAspect
+
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'org.springframework:spring-webmvc:7.0.0-M4'
 }
 
 test {
@@ -21,3 +37,12 @@ test {
 wrapper {
     gradleVersion("8.2")
 }
+
+class CustomPluginFromAspect implements Plugin<Project>{
+
+    @Override
+    void apply(Project target) {
+        println "CustomPluginFromAspect startUp"
+    }
+}
+

@@ -1,0 +1,42 @@
+task hello(description: "First task's", group: "net.aspect.education") {
+    println "Gradle: ${gradle.hashCode()}"
+    println "Project: ${project.hashCode()}"
+    println "rootProject: ${rootProject.hashCode()}"
+
+    doLast {
+        println "Last!!!"
+    }
+    doLast {
+        println "Last32!!!"
+    }
+    doLast {
+        println "Last2!!!"
+    }
+    doFirst {
+        println "First!!!!!{}{}{}"
+    }
+
+    println "Description ${description}, group:${group}, action: ${actions.size()}"
+}
+
+task task2{
+    doFirst {
+        println "<b>task2</b>"
+    }
+}
+
+task task3{
+    doFirst {
+        println "task3!"
+    }
+}
+
+task2.dependsOn(task3)
+
+gradle.taskGraph.whenReady {
+    TaskExecutionGraph graph ->
+        println "graph: "
+        graph.allTasks.each(it ->
+                println "${it.name}"
+        )
+}
