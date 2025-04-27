@@ -5,45 +5,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                             http://www.springframework.org/schema/context
                             http://www.springframework.org/schema/context/spring-context-4.0.xsd">
-    <!--
-    <bean
-            id="propertiesSource"
-            class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
-        <property name="location" value="classpath:application.properties"/>
-    </bean>-->
 
-<!--    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>-->
-
+    <context:component-scan base-package="net.aspect.education"/>
     <context:annotation-config/>
-    <context:property-placeholder location="application.properties"/>
-
-    <bean
-        class="net.aspect.education.bpp.InjectBeanPostProcessor"/>
-
-    <bean
-        id="ur-1"
-        class="net.aspect.education.database.repository.UserRepository"/>
-
-    <bean
-            name="userDto"
-            class="net.aspect.education.database.dto.UserDto"
-            scope="prototype"
-    />
-
-    <bean
-            id="userMapper"
-            class="net.aspect.education.database.mapper.UserMapper"
-    >
-        <constructor-arg name="userDto" ref="userDto"/>
-    </bean>
-
-    <!--UserService bean-->
-    <bean
-            name="userService"
-            class="net.aspect.education.service.UserService"
-    >
-        <constructor-arg name="userMapper" ref="userMapper"/>
-        <constructor-arg name="userRepository" ref="ur-1"/>
-    </bean>
-
+    <bean class="net.aspect.education.config.ApplicationConfiguration"/>
 </beans>
