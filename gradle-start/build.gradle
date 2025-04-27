@@ -2,6 +2,7 @@ import java.time.LocalDateTime
 
 plugins {
     id 'java'
+    id 'war'
 }
 
 group = 'net.aspect.education'
@@ -38,7 +39,7 @@ wrapper {
     gradleVersion("8.2")
 }
 
-class CustomPluginFromAspect implements Plugin<Project>{
+class CustomPluginFromAspect implements Plugin<Project> {
 
     @Override
     void apply(Project target) {

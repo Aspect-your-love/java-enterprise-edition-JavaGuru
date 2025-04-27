@@ -1,5 +1,5 @@
 plugins {
-    id 'java-library'
+    id 'java'
 }
 
 group = 'net.aspect.education'
@@ -10,8 +10,6 @@ repositories {
 }
 
 dependencies {
-    implementation project(":common:utils")
-
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
