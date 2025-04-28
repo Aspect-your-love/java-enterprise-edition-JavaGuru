@@ -10,6 +10,7 @@ public class JpaCondition implements Condition {
      * JpaConfig
      * Если нет драйвера для PostgreSQL, то и не будет подтянут конфиг*/
     @Override
+    @SuppressWarnings("all")
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
         try{
             context.getClassLoader().loadClass("org.postgresql.Driver");
