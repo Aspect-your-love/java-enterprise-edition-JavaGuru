@@ -1,4 +1,4 @@
-package net.aspect.education.service;
+package net.aspect.education;
 
 
 import net.aspect.education.database.dto.CompanyReadDto;

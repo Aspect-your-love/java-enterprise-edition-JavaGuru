@@ -1,31 +1,31 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '3.4.5'
+    id 'io.spring.dependency-management' version '1.1.7'
+    id("io.freefair.lombok") version "8.13.1"
 }
 
 group = 'net.aspect.education'
 version = '1.0-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    //Test
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-
-    //Lombok
-    compileOnly("org.projectlombok:lombok:1.18.38")
-    annotationProcessor("org.projectlombok:lombok:1.18.38")
-    //Lombok-testScope
-    testCompileOnly("org.projectlombok:lombok:1.18.38")
-    testAnnotationProcessor("org.projectlombok:lombok:1.18.38")
+    runtimeOnly 'org.postgresql:postgresql'
 
     //Spring
-    implementation 'org.springframework:spring-core:6.2.6'
-    implementation 'org.springframework:spring-context-support:6.2.6'
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-test'
 
-    implementation 'jakarta.annotation:jakarta.annotation-api:3.0.0'
+    //implementation 'jakarta.annotation:jakarta.annotation-api:3.0.0'
 
 }
 
@@ -40,5 +40,5 @@ gradle.taskGraph.whenReady {
         graph.allTasks.each(it ->
                 println "${it.name}"
         )
-    println "*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*"
+        println "*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*"
 }
