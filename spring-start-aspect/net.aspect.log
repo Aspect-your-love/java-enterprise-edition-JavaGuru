@@ -1,0 +1,4 @@
+2025-04-28T02:20:41.361+07:00  INFO 14220 --- [main] n.a.e.d.connection_pool.ConnectionPool   : Был инициализирован класс net.aspect.education.database.connection_pool.ConnectionPool
+2025-04-28T02:20:41.365+07:00  INFO 14220 --- [main] n.a.e.d.connection_pool.ConnectionPool   : Init connection pool
+2025-04-28T02:21:28.307+07:00  INFO 1804 --- [main] n.a.e.d.connection_pool.ConnectionPool   : Был инициализирован класс net.aspect.education.database.connection_pool.ConnectionPool
+2025-04-28T02:21:28.311+07:00  INFO 1804 --- [main] n.a.e.d.connection_pool.ConnectionPool   : Init connection pool
