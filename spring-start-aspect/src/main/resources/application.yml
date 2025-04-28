@@ -1,0 +1,29 @@
+db:
+  username: postgres
+  password: root
+  driver: PostgresDriver
+  url: postgres:5432
+  hosts: localhost, 127.0.0.1
+  pool:
+    size: 25
+    timeout: 20
+  properties:
+    first: 1
+    second: 2
+    key: value
+  pools:
+  - size: 25
+    timeout: 20
+  - size: 30
+    timeout: 60
+  - size: 1
+    timeout: 240
+spring:
+  profiles:
+    active: web, prod, test
+logging:
+  charset:
+    console: UTF-8
+  level:
+    root: WARN
+    net.aspect.education.database: INFO
