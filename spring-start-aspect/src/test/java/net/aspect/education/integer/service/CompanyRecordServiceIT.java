@@ -10,7 +10,7 @@ import org.springframework.test.context.TestConstructor;
 @IT
 @RequiredArgsConstructor
 @TestConstructor(autowireMode = TestConstructor.AutowireMode.ALL)
-public class CompanyServiceIT {
+public class CompanyRecordServiceIT {
     private static final Long COMPANY_ID = 1L;
 
     private final CompanyService companyService;

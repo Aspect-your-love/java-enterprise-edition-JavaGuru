@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS companys
 
 CREATE TABLE IF NOT EXISTS company_locales
 (
-  company_id  INT REFERENCES companys (id),
+  company_id  INT REFERENCES company (id),
   lang        VARCHAR(2),
   description VARCHAR(255) NOT NULL,
   PRIMARY KEY (company_id, lang)
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS users
   firstname  VARCHAR(64),
   lastname   VARCHAR(64),
   role       VARCHAR(32),
-  company_id INTEGER REFERENCES companys (id)
+  company_id INTEGER REFERENCES company (id)
 );
 
 CREATE TABLE IF NOT EXISTS chats
