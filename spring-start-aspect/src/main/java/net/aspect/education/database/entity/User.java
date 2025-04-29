@@ -3,7 +3,9 @@ package net.aspect.education.database.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.sql.Date;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -24,7 +26,7 @@ public class User {
     private String username;
 
     @Column(name = "birth_date")
-    private Date birthDay;
+    private LocalDate birthDay;
 
     @Column(name = "firstname")
     private String firstname;
@@ -46,4 +48,8 @@ public class User {
             , fetch = FetchType.LAZY)
     @JoinColumn(name = "company_id", referencedColumnName = "id")
     private Company company;
+
+    @Builder.Default
+    @OneToMany(mappedBy="user")
+    private List<UserChat> userChats = new ArrayList<>();
 }

@@ -1,8 +1,7 @@
 package net.aspect.education.database.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 
 import java.util.ArrayList;
@@ -12,6 +11,10 @@ import java.util.Set;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Builder
 @Entity
 @Table(name = "chats")
 public class Chat {
@@ -23,7 +26,8 @@ public class Chat {
     @Column(name = "name", length = 64)
     private String name;
 
+    @Builder.Default
     @OneToMany(mappedBy = "chat")
-    private List<UserChat> usersChats = new ArrayList<>();
+    private List<UserChat> userChats = new ArrayList<>();
 
 }

@@ -1,13 +1,15 @@
 package net.aspect.education.database.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 
 @Getter
 @Setter
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 @Table(name = "payments")
 public class Payment {
     @Id
@@ -22,5 +24,4 @@ public class Payment {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "reciever_id", referencedColumnName = "id")
     private User user;
-
 }
