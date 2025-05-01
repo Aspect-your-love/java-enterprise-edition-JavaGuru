@@ -1,4 +1,4 @@
 package net.aspect.education.database.dto;
 
-public record CompanyReadDto(Long id) {
+public record CompanyReadDto(Integer id) {
 }

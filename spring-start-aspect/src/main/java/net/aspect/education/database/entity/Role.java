@@ -1,6 +1,6 @@
 package net.aspect.education.database.entity;
 
-public enum Role {
+public enum  Role {
     ADMIN,
     USER,
     DEVELOPER,

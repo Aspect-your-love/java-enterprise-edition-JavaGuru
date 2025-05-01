@@ -1,4 +1,4 @@
-package net.aspect.education;
+package net.aspect.education.service;
 
 
 import net.aspect.education.database.dto.CompanyReadDto;
@@ -17,16 +17,16 @@ public class CompanyService {
     private final CompanyRepository companyRepository;
     private final ApplicationEventPublisher applicationEventPublisher;
 
-
-    public CompanyService(@Autowired CompanyRepository companyRepository, ApplicationEventPublisher applicationEventPublisher) {
+    @Autowired
+    public CompanyService( CompanyRepository companyRepository, ApplicationEventPublisher applicationEventPublisher) {
         this.companyRepository = companyRepository;
         this.applicationEventPublisher = applicationEventPublisher;
     }
 
-    public Optional<CompanyReadDto> findById(Long id){
+    public Optional<CompanyReadDto> findById(Integer id){
         return companyRepository.findById(id).map(e -> {
             applicationEventPublisher.publishEvent(new EntityEvent(e, AccessType.READ));
-            return new CompanyReadDto(e.id());
+            return new CompanyReadDto(e.getId());
         });
     }
 }

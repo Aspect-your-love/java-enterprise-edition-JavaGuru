@@ -1,10 +1,10 @@
 package net.aspect.education.unit.service;
 
+import net.aspect.education.service.CompanyService;
 import net.aspect.education.database.dto.CompanyReadDto;
-import net.aspect.education.database.entity.CompanyRecord;
+import net.aspect.education.database.entity.Company;
 import net.aspect.education.database.repository.CompanyRepository;
 import net.aspect.education.listener.EntityEvent;
-import net.aspect.education.CompanyService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -14,13 +14,14 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.context.ApplicationEventPublisher;
 
+import java.util.Collections;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)
 class CompanyRecordServiceTest {
-    private static final Long COMPANY_ID = 1L;
+    private static final Integer COMPANY_ID = 1;
 
     @Mock   //Устанавливаем заглушку
     private CompanyRepository companyRepository;
@@ -36,7 +37,7 @@ class CompanyRecordServiceTest {
         * Когда происходит вызов companyRepository,
         * просим у Mockito сделать подмену и вернуть
         * заглушку по ID*/
-        Mockito.doReturn(Optional.of(new CompanyRecord(COMPANY_ID)))
+        Mockito.doReturn(Optional.of(new Company(COMPANY_ID, null, Collections.emptyMap())))
                 .when(companyRepository)
                 .findById(COMPANY_ID);
 

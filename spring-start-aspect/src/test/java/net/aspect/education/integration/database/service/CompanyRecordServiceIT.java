@@ -1,7 +1,7 @@
-package net.aspect.education.integer.service;
+package net.aspect.education.integration.database.service;
 
 import lombok.RequiredArgsConstructor;
-import net.aspect.education.CompanyService;
+import net.aspect.education.service.CompanyService;
 import net.aspect.education.annotation.IT;
 import net.aspect.education.config.DataBasePropertiesYML;
 import org.junit.jupiter.api.Test;

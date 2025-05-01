@@ -2,7 +2,6 @@ package net.aspect.education.database.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.ColumnDefault;
 
 @Getter
 @Setter
@@ -14,7 +13,6 @@ import org.hibernate.annotations.ColumnDefault;
 public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @ColumnDefault("nextval('payments_id_seq')")
     @Column(name = "id", nullable = false)
     private Long id;
 

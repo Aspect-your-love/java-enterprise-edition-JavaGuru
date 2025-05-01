@@ -1,14 +1,14 @@
-package net.aspect.education;
+package net.aspect.education.service;
 
-import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 import net.aspect.education.database.mapper.UserMapper;
 import net.aspect.education.database.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 @ToString
-@Component
+@Service
 public class UserService {
     private final UserMapper userMapper;
     private final UserRepository userRepository;
