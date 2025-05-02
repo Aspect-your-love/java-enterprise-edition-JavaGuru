@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class loggingController {
     @GetMapping("/login")
     public String loginPage() {
-        return "user/login";
+        return "greeting/user/login";
     }
     @PostMapping("/login")
-    public void postLogin(Model model, @ModelAttribute("login") LoginDto loginDto){
-
+    public String postLogin(Model model, @ModelAttribute("login") LoginDto loginDto){
+        return "redirect: /login";
     }
 }

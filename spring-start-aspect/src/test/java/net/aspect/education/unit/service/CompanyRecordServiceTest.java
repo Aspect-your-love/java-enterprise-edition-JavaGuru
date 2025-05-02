@@ -44,7 +44,7 @@ class CompanyRecordServiceTest {
         // Актуальный результат
         var actualResult = companyService.findById(COMPANY_ID);
         //Ожидаемый результат
-        var expectedResult = new CompanyReadDto(COMPANY_ID);
+        var expectedResult = new CompanyReadDto(COMPANY_ID, "Developer</>Groups");
 
         Mockito.verify(applicationEventPublisher).publishEvent(Mockito.any(EntityEvent.class));
         assertAll(

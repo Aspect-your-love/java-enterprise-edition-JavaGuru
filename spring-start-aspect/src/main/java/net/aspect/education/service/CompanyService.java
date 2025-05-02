@@ -26,7 +26,7 @@ public class CompanyService {
     public Optional<CompanyReadDto> findById(Integer id){
         return companyRepository.findById(id).map(e -> {
             applicationEventPublisher.publishEvent(new EntityEvent(e, AccessType.READ));
-            return new CompanyReadDto(e.getId());
+            return new CompanyReadDto(e.getId(), "UNDEFINED");
         });
     }
 }

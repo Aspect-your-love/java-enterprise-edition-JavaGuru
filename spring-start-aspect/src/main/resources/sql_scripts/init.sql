@@ -1,4 +1,4 @@
-CREATE DATABASE spring_boot;
+create database spring_boot;
 
 CREATE TABLE IF NOT EXISTS company
 (
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS users
   firstname  VARCHAR(64),
   lastname   VARCHAR(64),
   role       VARCHAR(32),
-  company_id INTEGER REFERENCES company (id)
+  company_id INTEGER REFERENCES company (id) ON DELETE CASCADE
 );
 
 CREATE TABLE IF NOT EXISTS chats
@@ -34,13 +34,13 @@ CREATE TABLE IF NOT EXISTS chats
 CREATE TABLE IF NOT EXISTS users_chat
 (
   id      BIGSERIAL PRIMARY KEY,
-  user_id BIGINT REFERENCES users (id),
-  chat_id BIGINT REFERENCES chats (id)
+  user_id BIGINT REFERENCES users (id) ON DELETE CASCADE,
+  chat_id BIGINT REFERENCES chats (id) ON DELETE CASCADE
 );
 
 CREATE TABLE IF NOT EXISTS payments
 (
   id          BIGSERIAL PRIMARY KEY,
   amount      BIGINT NOT NULL,
-  reciever_id BIGINT REFERENCES users (id)
+  reciever_id BIGINT REFERENCES users (id) ON DELETE CASCADE
 );
