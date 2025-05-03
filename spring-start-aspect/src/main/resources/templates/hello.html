@@ -1,18 +1,13 @@
 <!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Hello!</title>
 </head>
 <body>
-    <div style="text-align: center">
+    <!--<div style="text-align: center">
         <p>This test application use WEB MVC and SPRING BOOT 3</p>
-        <br>
-        <p>Test application!</p>
-        <br>
-        <p>Test application!</p>
-        <br>
-        <p>Test application!</p>
         <br>
         <p>Test application!</p>
     </div>
@@ -24,6 +19,9 @@
     <div>
         <p>List all Roles:</p>
         <p>${requestScope.roles}</p>
-    </div>
+    </div>-->
+
+<p>Hello <span th:text="${userReadDto.username}">Test text</span></p>
+<p th:text="|hello ${userReadDto.username}!|">Hello user</p>
 </body>
 </html>

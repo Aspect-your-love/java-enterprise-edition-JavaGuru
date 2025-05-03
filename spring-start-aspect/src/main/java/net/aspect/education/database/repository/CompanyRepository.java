@@ -11,6 +11,8 @@ public interface CompanyRepository
         extends
         JpaRepository<Company, Integer> {
 
+    List<Company> findAll();
+
 
     @Query("select c " +
            "from Company c " +
