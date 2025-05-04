@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>User info</title>
@@ -9,7 +8,6 @@
 <form th:action="@{/users/{userId}/update(userId=${user.id})}" method="post" th:object="${user}">
     <label for="username">Username:
         <input id="username" type="email" name="username" th:value="*{username}">//Можно ${user.username}
-        </input>
     </label><br>
     <label for="birthDate">Birthday:
         <input id="birthDate" type="date" name="birthDate" th:value="*{birthDate}">
@@ -29,7 +27,7 @@
             <select id="company">
                 <option th:each="company : ${companies}"
                         th:value="${company.id}"
-                        th:selected="${company.id == user.company.id}"
+                        th:selected="${company != null and user.company != null and company.id == user.company.id}"
                         th:text="${company.name}">Company</option>
             </select>
         </label>
@@ -37,8 +35,14 @@
     <button type="submit">Update</button>
 </form>
 
-<form th:action="@{/users/{userId}/delete(userId=${user.id})" th:if="$(user.role.name == 'ADMIN')" method="POST">
+<form th:action="@{/users/{userId}/delete(userId=${user.id})}" th:if="${user.role.name == 'ADMIN'}" method="POST">
     <button type="submit">Delete user.</button>
+</form>
+
+<form>
+    <div th:if="${errors}">
+        <p style="color: red" th:each="error : ${errors}" th:text="${error.defaultMessage}">Error message</p>
+    </div>
 </form>
 </body>
 </html>

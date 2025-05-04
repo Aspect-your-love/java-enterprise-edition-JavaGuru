@@ -9,12 +9,14 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 
-import java.io.Serializable;
 import java.util.List;
 import java.util.Optional;
 
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, Long>,
+        FilterUserRepository,
+        QuerydslPredicateExecutor<User> { //Добавили для того, чтобы получить специальный метод findAll
     @Query("select u from User u " +
            "where u.firstname like %:firstname% and u.lastname like %:lastname% ")
     List<User> findAllByFirstnameContainingAndLastnameContaining(String firstname, String lastname);
