@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: fast-rest-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fast_rest
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        hbm2ddl: validate
+    open-in-view: false
+
+logging:
+  charset:
+    console: UTF-8
+  level:
+    root: warn
+
+server:
+  port: 8081
