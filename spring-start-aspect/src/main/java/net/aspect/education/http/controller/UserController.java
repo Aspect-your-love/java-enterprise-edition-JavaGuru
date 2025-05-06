@@ -1,8 +1,5 @@
 package net.aspect.education.http.controller;
 
-import com.sun.net.httpserver.HttpsServer;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import net.aspect.education.database.dto.PageResponse;
 import net.aspect.education.database.dto.UserCreateEditDto;
@@ -59,12 +56,9 @@ public class UserController {
                     1);
         }
 
-        model
-                .addAttribute("user", user);
-        model
-                .addAttribute("roles", Role.values());
-        model
-                .addAttribute("companies", companyService.findAll());
+        model.addAttribute("user", user);
+        model.addAttribute("roles", Role.values());
+        model.addAttribute("companies", companyService.findAll());
         return "user/registration";
     }
 

@@ -41,5 +41,5 @@ logging:
   charset:
     console: UTF-8
   level:
-    root: WARN
+    root: INFO
     net.aspect.education.database: INFO

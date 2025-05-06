@@ -6,8 +6,6 @@ import net.aspect.education.database.dto.UserCreateEditDto;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
-import java.lang.annotation.Annotation;
-
 @Component
 public class UserInfoValidator implements ConstraintValidator<UserInfo, UserCreateEditDto> {
     @Override
