@@ -11,13 +11,19 @@
     </label><br>
     <label for="birthDate">Birthday:
         <input id="birthDate" type="date" name="birthDate" th:value="*{birthDate}">
-    </label>
+    </label><br>
     <label for="firstname">Firstname:
         <input id="firstname" type="text" name="firstname" th:value="*{firstname}">
-    </label>
+    </label><br>
     <label for="lastname">Lastname:
         <input id="lastname" type="text" name="lastname" th:value="*{lastname}">
-    </label>
+    </label><br>
+    <div th:if="${user.image}">
+        <img th:src="@{/api/v1/users/{userId}/avatar(userId=${user.id})}" alt = "User image"/>
+    </div>
+    <label for="image">
+        <input id="image" type="image" name="image">
+    </label><br>
     <div th:each="role : ${roles}">
         <input th:id="${role}" type="radio" name="role" th:value="${role}" th:checked="${role == user.role}">
         <label th:for="${role}" th:text="${role}">Role name</label>

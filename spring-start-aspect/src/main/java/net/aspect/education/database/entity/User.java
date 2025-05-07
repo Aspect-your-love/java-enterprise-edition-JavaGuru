@@ -34,6 +34,9 @@ public class User {
     @Column(name = "lastname")
     private String lastname;
 
+    @Column(name="image_pic")
+    private String image;
+
     @Enumerated(EnumType.STRING)
     @Column(name = "role")
     private Role role;

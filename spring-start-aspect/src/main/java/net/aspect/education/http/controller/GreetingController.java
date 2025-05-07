@@ -48,12 +48,13 @@ public class GreetingController {
     @RequestMapping(value = "/hello")
     public String bye(Model model){
         CompanyReadDto companyReadDto = new CompanyReadDto(10, "Boo-ba");
-        UserReadDto userReadDto = new UserReadDto(10L,
+        UserReadDto userReadDto =  new UserReadDto(10L,
                 "oslik@mail.ru",
                 LocalDate.now(),
                 "Igor",
                 "Igorev",
                 Role.USER,
+                null,
                 companyReadDto);
 
         model.addAttribute("userReadDto", userReadDto);

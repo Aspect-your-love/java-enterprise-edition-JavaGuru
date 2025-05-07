@@ -9,6 +9,7 @@ import lombok.experimental.FieldNameConstants;
 import net.aspect.education.database.entity.Role;
 import net.aspect.education.validator.UserInfo;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDate;
 
@@ -25,4 +26,5 @@ public class UserCreateEditDto {
     String lastname;
     Role role;
     Integer companyId;
+    MultipartFile image;
 }

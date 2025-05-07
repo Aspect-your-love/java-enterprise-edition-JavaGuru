@@ -9,16 +9,20 @@ import net.aspect.education.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.stereotype.Controller;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
-@Controller
+import static org.springframework.http.ResponseEntity.notFound;
+
+
 @Slf4j
 @RequestMapping("/api/v1/users")
+@RestController
 public class UserRestController {
     private final UserService userService;
 
@@ -28,7 +32,6 @@ public class UserRestController {
     }
 
     @GetMapping
-    @ResponseBody
     public PageResponse<UserReadDto> findAll(UserFilter filter, Pageable pageable) {
         Page<UserReadDto> page = userService.findAll(filter, pageable);
 
@@ -58,5 +61,23 @@ public class UserRestController {
     public void delete(@PathVariable("id") Long id) {
         if (!userService.delete(id))
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+    }
+
+    /*@GetMapping(
+            value = "/{id}/avatar",
+            produces = MediaType.APPLICATION_OCTET_STREAM_VALUE
+    )
+    public byte[] findAvatar(@PathVariable("id") Long id) {
+        return userService.findAvatar(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+    }*/
+
+    @GetMapping(value="{id}/avatar")
+    public ResponseEntity<byte[]> findAvatar(@PathVariable("id") Long id) {
+        return userService.findAvatar(id)
+                .map(content -> ResponseEntity.ok()
+                        .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_OCTET_STREAM_VALUE)
+                        .contentLength(content.length)
+                        .body(content))
+                .orElseGet(notFound()::build);
     }
 }

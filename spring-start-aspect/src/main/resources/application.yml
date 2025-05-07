@@ -43,3 +43,7 @@ logging:
   level:
     root: INFO
     net.aspect.education.database: INFO
+
+app:
+  image:
+    bucket: D:\Java_IDEA_project\java-enterprise-edition-JavaGuru\spring-start-aspect\image
