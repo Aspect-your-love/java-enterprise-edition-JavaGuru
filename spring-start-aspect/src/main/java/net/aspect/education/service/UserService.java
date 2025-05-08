@@ -13,12 +13,16 @@ import net.aspect.education.database.mapper.UserReadMapper;
 import net.aspect.education.database.repository.UserRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -29,7 +33,7 @@ import static net.aspect.education.database.entity.QUser.user;
 @RequiredArgsConstructor
 @Transactional(readOnly = true)     //Повышаем производительность. Только для чтения.
 @Slf4j
-public class UserService {
+public class UserService implements UserDetailsService {
     private final UserRepository userRepository;
     private final UserReadMapper userReadMapper;
     private final UserCreateEdditMapper userCreateEdditMapper;
@@ -112,6 +116,19 @@ public class UserService {
                     return true;
                 })
                 .orElse(false);
+    }
+
+    /**
+     * Реализуем авторизацию через DAO способ*/
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        return userRepository.findByUsername(username)
+                .map(user -> new org.springframework.security.core.userdetails.User(
+                        user.getUsername(),
+                        user.getPassword(),
+                                Collections.singleton(user.getRole())
+                        ))
+                .orElseThrow(() -> new UsernameNotFoundException("Faild to retrieve user: " + username));
     }
 }
 

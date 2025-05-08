@@ -37,6 +37,8 @@ public class User {
     @Column(name="image_pic")
     private String image;
 
+    private String password;
+
     @Enumerated(EnumType.STRING)
     @Column(name = "role")
     private Role role;

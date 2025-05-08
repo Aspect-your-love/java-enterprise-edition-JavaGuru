@@ -17,6 +17,8 @@ import java.util.Optional;
 public interface UserRepository extends JpaRepository<User, Long>,
         FilterUserRepository,
         QuerydslPredicateExecutor<User> { //Добавили для того, чтобы получить специальный метод findAll
+    Optional<User> findByUsername(String username);
+
     @Query("select u from User u " +
            "where u.firstname like %:firstname% and u.lastname like %:lastname% ")
     List<User> findAllByFirstnameContainingAndLastnameContaining(String firstname, String lastname);

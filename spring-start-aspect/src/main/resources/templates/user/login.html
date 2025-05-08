@@ -12,6 +12,10 @@
     </style>
 </head>
 <body>
+<div style="color: red" th:if="${param.error}">
+        Invalid username and password.
+
+</div>
 <form action="/login" method="POST">
     <label for="username">Username:
         <input id="username" type="email" name="username">
