@@ -36,6 +36,8 @@ spring:
       format_sql: true
       hbm2ddl.auto: validate
     open-in-view: false
+  messages:
+    basename: messages
 
 logging:
   charset:
@@ -47,3 +49,4 @@ logging:
 app:
   image:
     bucket: D:\Java_IDEA_project\java-enterprise-edition-JavaGuru\spring-start-aspect\image
+

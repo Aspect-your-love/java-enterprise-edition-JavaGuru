@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<html>
 <head>
     <meta charset="UTF-8">
     <title>Login security!</title>
@@ -13,20 +12,23 @@
 </head>
 <body>
 <div style="color: red" th:if="${param.error}">
+    <span th:text="#{error.invalid.data}">
         Invalid username and password.
-
+    </span>
 </div>
-<form action="/login" method="POST">
-    <label for="username">Username:
+<div th:insert="~{fragment :: locale}"></div><br>
+<br>
+<form th:action="@{/login}" method="POST">
+    <label for="username"> <span th:text="#{login.username}">Username:</span>
         <input id="username" type="email" name="username">
     </label> <br>
-    <label for="password"> Password:
+    <label for="password"> <span th:text="#{login.password}">Password:</span>
         <input id="password" type="password" name="password">
     </label> <br>
     <button type="submit">Login!</button>
 </form>
 <form action="/users/registration">
-     <button type="submit">Registration</button>
+    <button type="submit">Registration</button>
 </form>
 </body>
 </html>

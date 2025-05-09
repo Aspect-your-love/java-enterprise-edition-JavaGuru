@@ -20,12 +20,17 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.time.LocalDate;
 
+/**
+ *
+ *
+ * @author Aspect
+ * @date 2025/05/09 00:50
+ */
 @Controller
 @RequestMapping("/users")
 @Slf4j
@@ -67,7 +72,7 @@ public class UserController {
         return "user/registration";
     }
 
-    @PreAuthorize("hasAnyRole('ADMIN', 'CEO')")
+    @PreAuthorize("hasAnyAuthority('ADMIN', 'CEO')")
     @GetMapping("/{id}")
     public String findById(@PathVariable("id") Long id,
                            Model model,
